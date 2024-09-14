@@ -39,9 +39,9 @@ header {
 
 /* Contact info */
 .contact-info {
-    display: flex; /* Use flexbox to align items horizontally */
-    justify-content: center; /* Center the contact details horizontally */
-    gap: 15px; /* Add spacing between contact items */
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Spacing between contact items */
     margin-top: 10px;
 }
 
@@ -49,12 +49,14 @@ header {
     color: #228B22;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block; /* Align links inline */
-    font-size: 14px;
+    display: inline-block;
 }
 
-.contact-info a:hover {
-    text-decoration: underline; /* Add underline on hover */
+/* Hide email and WhatsApp on mobile view */
+@media only screen and (max-width: 767px) {
+    .email, .whatsapp {
+        display: none; /* Hide these elements on mobile */
+    }
 }
 
 /* Navigation */
@@ -65,10 +67,9 @@ nav {
 nav ul.main-menu {
     list-style: none;
     padding: 0;
-    display: flex; /* Arrange menu items horizontally */
-    justify-content: space-around; /* Space out menu items evenly */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    margin: 0; /* Remove default margin */
+    display: flex;
+    flex-direction: column; /* Stack menu items vertically for mobile */
+    align-items: center;
 }
 
 nav ul.main-menu li {
@@ -77,10 +78,11 @@ nav ul.main-menu li {
 
 nav ul.main-menu li a {
     color: #fff;
-    padding: 10px 15px; /* Adjust padding for better fit */
+    padding: 10px;
     display: block;
     text-decoration: none;
     text-align: center;
+    width: 100%; /* Make menu items fit within the screen */
 }
 
 nav ul.main-menu li a:hover {
@@ -90,12 +92,11 @@ nav ul.main-menu li a:hover {
 /* Dropdown Menu */
 nav ul.dropdown-menu {
     display: none; /* Hide dropdown menu by default */
-    position: absolute; /* Ensure dropdown menu is positioned properly */
+    position: static; /* Change position for mobile */
     background: #003300;
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 100%; /* Make dropdown menu full width */
 }
 
 nav ul.dropdown-menu li a {
@@ -161,15 +162,12 @@ form button {
 
 /* Service Boxes */
 .service-container {
-    display: flex; /* Arrange service boxes horizontally */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    gap: 20px; /* Add space between service boxes */
+    display: block; /* Stack service boxes vertically */
 }
 
 .service-box {
-    width: calc(50% - 10px); /* Adjust width for two boxes per row */
+    width: 100%; /* Full width for mobile */
     margin-bottom: 20px;
-    box-sizing: border-box;
 }
 
 .service-img {
