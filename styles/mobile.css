@@ -39,6 +39,9 @@ header {
 
 /* Contact info */
 .contact-info {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center the contact details horizontally */
+    gap: 15px; /* Add spacing between contact items */
     margin-top: 10px;
 }
 
@@ -46,9 +49,22 @@ header {
     color: #228B22;
     text-decoration: none;
     font-weight: bold;
-    display: block;
-    margin: 5px 0;
+    display: inline-block; /* Align links inline */
+    font-size: 14px;
 }
+
+.contact-info a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Mobile contact section adjustments */
+@media screen and (max-width: 600px) {
+    .contact-info {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        text-align: center;
+    }
+}
+
 
 /* Navigation */
 nav {
