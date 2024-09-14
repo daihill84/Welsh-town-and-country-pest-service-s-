@@ -1,6 +1,5 @@
-# Allow all robots access to all content
-User-agent: *
-Disallow:
+User-agent: Googlebot
+Allow: /pagead/viewthroughconversion/
 
 # Specify the location of your sitemap
 Sitemap: https://www.welshtownandcountry.co.uk/sitemap.xml
