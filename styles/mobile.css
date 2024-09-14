@@ -19,65 +19,59 @@ body {
 header {
     background: #004d00;
     color: #fff;
-    padding: 5px 0; /* Smaller header box */
+    padding: 10px 0;
     text-align: center;
 }
 
-/* Header container */
 .header-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Logo container */
 .logo-container {
-    margin-bottom: 5px; /* Smaller margin below logo */
+    margin-bottom: 10px;
 }
 
 .logo {
-    max-width: 80px; /* Smaller logo for mobile */
+    max-width: 100px; /* Smaller logo for mobile */
 }
 
-/* Contact info, listed horizontally */
+/* Contact info */
 .contact-info {
-    margin-top: 5px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .contact-info a {
     color: #228B22;
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px; /* Smaller font for mobile */
+    display: block;
+    margin: 5px 0;
 }
 
 /* Navigation */
 nav {
     background: #003300;
-    padding: 5px 0;
 }
 
 nav ul.main-menu {
     list-style: none;
     padding: 0;
-    display: block;
-    text-align: center;
+    display: block; /* Change to block for mobile */
 }
 
 nav ul.main-menu li {
-    display: inline-block;
-    margin: 0 5px;
+    position: relative;
 }
 
 nav ul.main-menu li a {
     color: #fff;
-    padding: 5px 10px; /* Smaller link boxes */
+    padding: 10px;
     display: block;
     text-decoration: none;
-    font-size: 14px; /* Smaller font size */
+    text-align: center;
 }
 
 nav ul.main-menu li a:hover {
@@ -86,8 +80,8 @@ nav ul.main-menu li a:hover {
 
 /* Dropdown Menu */
 nav ul.dropdown-menu {
-    display: none;
-    position: static;
+    display: none; /* Hide dropdown menu by default */
+    position: static; /* Change position for mobile */
     background: #003300;
     list-style: none;
     padding: 0;
@@ -121,19 +115,19 @@ main {
 }
 
 .contact-form h2 {
-    font-size: 20px; /* Adjusted for mobile */
+    font-size: 22px; /* Adjust font size for mobile */
 }
 
 .contact-form p {
-    font-size: 14px; /* Adjusted for mobile */
+    font-size: 16px; /* Adjust font size for mobile */
 }
 
 .contact-details h3 {
-    font-size: 18px;
+    font-size: 18px; /* Adjust font size for mobile */
 }
 
 .contact-details p {
-    font-size: 14px;
+    font-size: 16px; /* Adjust font size for mobile */
 }
 
 form label {
@@ -157,7 +151,7 @@ form button {
 
 /* Service Boxes */
 .service-container {
-    display: block; /* Stack boxes vertically */
+    display: block; /* Stack service boxes vertically for mobile */
 }
 
 .service-box {
@@ -189,4 +183,21 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Adjustments for Heading Alignment on Mobile */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack logo and contact info vertically */
+    }
+
+    .contact-info {
+        margin-top: 10px;
+        text-align: center; /* Ensure contact info is centered */
+    }
+
+    .contact-info a {
+        display: block;
+        margin: 5px 0;
+    }
 }
