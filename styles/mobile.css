@@ -167,12 +167,12 @@ form button {
 
 .service-box {
     width: 100%; /* Full width for mobile */
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Spacing between service boxes */
 }
 
 .service-img {
     width: 100%; /* Full width for mobile */
-    height: auto;
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Footer */
