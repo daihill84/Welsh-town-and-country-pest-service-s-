@@ -162,18 +162,27 @@ form button {
 
 /* Service Boxes */
 .service-container {
-    display: block; /* Stack service boxes vertically */
+    display: flex;
+    flex-direction: column; /* Stack the service boxes vertically */
+    align-items: center; /* Center align them */
 }
 
 .service-box {
-    width: 100%; /* Full width for mobile */
-    margin-bottom: 20px; /* Spacing between service boxes */
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    width: 100%; /* Full width for each box */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text in service boxes */
 }
 
 .service-img {
-    width: 100%; /* Full width for mobile */
-    height: auto; /* Maintain aspect ratio */
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
 }
+
 
 /* Footer */
 footer {
