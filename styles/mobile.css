@@ -40,7 +40,6 @@ header {
 /* Contact info */
 .contact-info {
     margin-top: 10px;
-    text-align: center;
 }
 
 .contact-info a {
@@ -59,16 +58,19 @@ nav {
 nav ul.main-menu {
     list-style: none;
     padding: 0;
-    display: block; /* Change to block for mobile */
+    display: flex; /* Change to flex for horizontal layout */
+    justify-content: center; /* Center align the menu */
+    background: #003300;
+    flex-wrap: wrap; /* Allow wrapping to new line if needed */
 }
 
 nav ul.main-menu li {
-    position: relative;
+    margin: 0 5px; /* Add spacing between menu items */
 }
 
 nav ul.main-menu li a {
     color: #fff;
-    padding: 10px;
+    padding: 10px 15px; /* Add padding for better click area */
     display: block;
     text-decoration: none;
     text-align: center;
@@ -81,11 +83,14 @@ nav ul.main-menu li a:hover {
 /* Dropdown Menu */
 nav ul.dropdown-menu {
     display: none; /* Hide dropdown menu by default */
-    position: static; /* Change position for mobile */
     background: #003300;
     list-style: none;
     padding: 0;
     margin: 0;
+    position: absolute; /* Position dropdown menu */
+    top: 100%;
+    left: 0;
+    width: 100%;
 }
 
 nav ul.dropdown-menu li a {
@@ -99,7 +104,7 @@ nav ul.dropdown-menu li a:hover {
     background: #005700;
 }
 
-/* Dropdown menu display on mobile */
+/* Dropdown menu display on hover */
 nav li:hover .dropdown-menu {
     display: block;
 }
@@ -151,7 +156,7 @@ form button {
 
 /* Service Boxes */
 .service-container {
-    display: block; /* Stack service boxes vertically for mobile */
+    display: block; /* Stack service boxes vertically */
 }
 
 .service-box {
@@ -183,21 +188,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-/* Adjustments for Heading Alignment on Mobile */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column; /* Stack logo and contact info vertically */
-    }
-
-    .contact-info {
-        margin-top: 10px;
-        text-align: center; /* Ensure contact info is centered */
-    }
-
-    .contact-info a {
-        display: block;
-        margin: 5px 0;
-    }
 }
