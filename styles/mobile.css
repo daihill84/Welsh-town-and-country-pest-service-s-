@@ -1,0 +1,192 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall layout */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Base font size for mobile */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header */
+header {
+    background: #004d00;
+    color: #fff;
+    padding: 5px 0; /* Smaller header box */
+    text-align: center;
+}
+
+/* Header container */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo container */
+.logo-container {
+    margin-bottom: 5px; /* Smaller margin below logo */
+}
+
+.logo {
+    max-width: 80px; /* Smaller logo for mobile */
+}
+
+/* Contact info, listed horizontally */
+.contact-info {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-info a {
+    color: #228B22;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px; /* Smaller font for mobile */
+}
+
+/* Navigation */
+nav {
+    background: #003300;
+    padding: 5px 0;
+}
+
+nav ul.main-menu {
+    list-style: none;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+
+nav ul.main-menu li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav ul.main-menu li a {
+    color: #fff;
+    padding: 5px 10px; /* Smaller link boxes */
+    display: block;
+    text-decoration: none;
+    font-size: 14px; /* Smaller font size */
+}
+
+nav ul.main-menu li a:hover {
+    background: #005700;
+}
+
+/* Dropdown Menu */
+nav ul.dropdown-menu {
+    display: none;
+    position: static;
+    background: #003300;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.dropdown-menu li a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul.dropdown-menu li a:hover {
+    background: #005700;
+}
+
+/* Dropdown menu display on mobile */
+nav li:hover .dropdown-menu {
+    display: block;
+}
+
+/* Main content */
+main {
+    padding: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    padding: 15px;
+}
+
+.contact-form h2 {
+    font-size: 20px; /* Adjusted for mobile */
+}
+
+.contact-form p {
+    font-size: 14px; /* Adjusted for mobile */
+}
+
+.contact-details h3 {
+    font-size: 18px;
+}
+
+.contact-details p {
+    font-size: 14px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    background-color: #004d00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Service Boxes */
+.service-container {
+    display: block; /* Stack boxes vertically */
+}
+
+.service-box {
+    width: 100%; /* Full width for mobile */
+    margin-bottom: 20px;
+}
+
+.service-img {
+    width: 100%; /* Full width for mobile */
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background: #003300;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
