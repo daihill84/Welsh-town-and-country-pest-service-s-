@@ -57,15 +57,6 @@ header {
     text-decoration: underline; /* Add underline on hover */
 }
 
-/* Mobile contact section adjustments */
-@media screen and (max-width: 600px) {
-    .contact-info {
-        flex-wrap: wrap; /* Allow wrapping on smaller screens */
-        text-align: center;
-    }
-}
-
-
 /* Navigation */
 nav {
     background: #003300;
@@ -74,19 +65,18 @@ nav {
 nav ul.main-menu {
     list-style: none;
     padding: 0;
-    display: flex; /* Change to flex for horizontal layout */
-    justify-content: center; /* Center align the menu */
-    background: #003300;
-    flex-wrap: wrap; /* Allow wrapping to new line if needed */
+    display: flex; /* Arrange menu items horizontally */
+    justify-content: center; /* Center menu items */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 nav ul.main-menu li {
-    margin: 0 5px; /* Add spacing between menu items */
+    position: relative;
 }
 
 nav ul.main-menu li a {
     color: #fff;
-    padding: 10px 15px; /* Add padding for better click area */
+    padding: 10px;
     display: block;
     text-decoration: none;
     text-align: center;
@@ -99,14 +89,11 @@ nav ul.main-menu li a:hover {
 /* Dropdown Menu */
 nav ul.dropdown-menu {
     display: none; /* Hide dropdown menu by default */
+    position: static; /* Change position for mobile */
     background: #003300;
     list-style: none;
     padding: 0;
     margin: 0;
-    position: absolute; /* Position dropdown menu */
-    top: 100%;
-    left: 0;
-    width: 100%;
 }
 
 nav ul.dropdown-menu li a {
@@ -120,7 +107,7 @@ nav ul.dropdown-menu li a:hover {
     background: #005700;
 }
 
-/* Dropdown menu display on hover */
+/* Dropdown menu display on mobile */
 nav li:hover .dropdown-menu {
     display: block;
 }
@@ -172,12 +159,15 @@ form button {
 
 /* Service Boxes */
 .service-container {
-    display: block; /* Stack service boxes vertically */
+    display: flex; /* Arrange service boxes horizontally */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Add space between service boxes */
 }
 
 .service-box {
-    width: 100%; /* Full width for mobile */
+    width: calc(50% - 10px); /* Adjust width for two boxes per row */
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .service-img {
