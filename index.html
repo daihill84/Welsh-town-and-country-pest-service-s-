@@ -117,11 +117,24 @@
         </footer>
     </div>
 
+     <!-- JavaScript to manage video playback -->
     <script>
-        // JavaScript to hide the video container after the video ends
-        document.getElementById('introVideo').addEventListener('ended', function() {
-            document.getElementById('videoContainer').style.display = 'none';
-            document.getElementById('mainContent').style.display = 'block';
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoContainer = document.getElementById('videoContainer');
+            const mainContent = document.getElementById('mainContent');
+            const video = document.getElementById('introVideo');
+
+            // Check if the video has already been played in this session
+            if (localStorage.getItem('videoPlayed') === 'true') {
+                videoContainer.style.display = 'none';
+                mainContent.style.display = 'block';
+            } else {
+                video.addEventListener('ended', function() {
+                    videoContainer.style.display = 'none';
+                    mainContent.style.display = 'block';
+                    localStorage.setItem('videoPlayed', 'true');
+                });
+            }
         });
     </script>
 </body>
