@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: 20px; /* Base font size for mobile */
     line-height: 1.6;
-    color: black;
+    color: white;
     background-color: darkblue;
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
