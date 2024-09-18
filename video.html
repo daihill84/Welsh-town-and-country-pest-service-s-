@@ -3,25 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>Welcome to Welsh Town and Country Pest Services - Watch Our Startup Video</title>
-    <meta name="description" content="Watch our introduction video for Welsh Town and Country Pest Services, offering pest control in Neath, Swansea, and South Wales.">
-    <meta name="keywords" content="pest control, wasp removal, pest control Neath, pest control Swansea, pest control South Wales, Welsh Town and Country Pest Services">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Welsh Town and Country Pest Services - Startup Video">
-    <meta property="og:description" content="Watch our startup video to learn about pest control services in Neath and Swansea.">
-    <meta property="og:url" content="https://www.welshtownandcountry.co.uk/video.html">
-    <meta property="og:type" content="video">
-    <meta property="og:image" content="URL_to_video_thumbnail_or_image">
-    
-    <!-- Geo Tags for Local SEO -->
-    <meta name="geo.position" content="51.6615;-3.8037">
-    <meta name="geo.placename" content="Neath, Swansea, South Wales">
-    <meta name="geo.region" content="GB">
-    
-    <!-- Full-screen video style -->
+    <meta name="description" content="Welsh Town and Country Pest Services introduction video">
+    <title>Welsh Town and Country Pest Services - Intro Video</title>
     <style>
         body, html {
             margin: 0;
@@ -32,28 +15,23 @@
             align-items: center;
             background-color: black;
         }
-
         video {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     </style>
-
-    <!-- Redirect after video ends -->
-    <script>
-        function redirectToHomepage() {
-            window.location.href = "https://www.welshtownandcountry.co.uk";
-        }
-    </script>
 </head>
 <body>
-
-    <!-- Full-screen video -->
     <video autoplay muted playsinline onended="redirectToHomepage()">
-        <source src="videos/startupad.mp4" type="video/mp4">
+        <source src="video/startupad.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
-
+    <script>
+        function redirectToHomepage() {
+            // Redirect to the main site after the video ends
+            window.location.href = "/index.html";
+        }
+    </script>
 </body>
 </html>
