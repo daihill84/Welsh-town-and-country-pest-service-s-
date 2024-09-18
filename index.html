@@ -26,7 +26,7 @@
 </head>
 <body>
     <!-- Video Container -->
-    <div class="video-container">
+    <div class="video-container" id="videoContainer">
         <video id="introVideo" autoplay muted playsinline>
             <source src="videos/startupad.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -83,5 +83,13 @@
 
         <!-- Main content goes here -->
     </div>
+
+    <script>
+        // JavaScript to hide the video container after the video ends
+        document.getElementById('introVideo').addEventListener('ended', function() {
+            document.getElementById('videoContainer').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+        });
+    </script>
 </body>
 </html>
