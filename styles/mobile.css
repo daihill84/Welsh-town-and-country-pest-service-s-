@@ -11,7 +11,7 @@ body {
     font-size: 20px; /* Base font size for mobile */
     line-height: 1.6;
     color: #333;
-    background-color: skyblue;
+    background-color: darkblue;
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
@@ -46,7 +46,7 @@ header {
 }
 
 .contact-info a {
-    color: red;
+    color:  #FF6F61
     font-size: 22px; 
     text-decoration: none;
     font-weight: bold;
@@ -169,7 +169,7 @@ video {
 }
 
 .service-box {
-    background: #fff;
+    background: skyblue;
     border: 1px solid #ddd;
     margin-bottom: 20px;
     width: 100%; /* Full width for each box */
