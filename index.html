@@ -14,41 +14,8 @@
     <meta name="geo.placename" content="Resolven, Neath">
     <meta name="geo.region" content="GB-NE">
     <title>Welsh Town and Country Pest Services</title>
-    <style>
-        /* Video Container Styles */
-        .video-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: 1;
-        }
-
-        /* Video Styles */
-        video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ensure video covers the container while maintaining aspect ratio */
-            background: black; /* Optional: add a background color to cover any gaps */
-        }
-
-        /* Main Content Styles */
-        #mainContent {
-            position: relative;
-            z-index: 2;
-            display: none;
-        }
-
-        header {
-            position: relative;
-            z-index: 2;
-        }
-    </style>
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 769px)">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRTRYP4T8D"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -68,7 +35,6 @@
 
     <!-- Main Content -->
     <div id="mainContent" class="content">
-        <!-- Your main content goes here -->
         <header>
             <div class="header-container">
                 <div class="logo-container">
@@ -106,41 +72,16 @@
                         <a href="#">Agricultural</a>
                         <ul class="dropdown-menu">
                             <li><a href="agricultural/rodents.html">Rodent Control</a></li>
+                            <li><a href="agricultural/insects.html">Insect Control</a></li>
                             <li><a href="agricultural/others.html">Other Pests</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section class="intro">
-                <h2>Expert Neath Pest Control Solutions for Residential and Commercial Properties</h2>
-                <h2>Expert Rodent Control and Insect Management</h2>
-                <p>Welcome to Welsh Town and Country Pest Services, your premier choice for comprehensive pest control solutions in Neath, Port Talbot, Swansea, Llanelli, Brecon, and Merthyr. Our expert team is dedicated to providing top-notch pest management services for both residential and commercial properties. Whether you're dealing with troublesome rodents, invasive insects, or other persistent pests, we offer tailored solutions to meet your needs.</p>
-                <p>At Welsh Town and Country, we specialize in a wide range of pest control services, including rodent control, insect management, and wildlife removal. Our professional approach ensures that your home, business, or agricultural property is protected from pests with effective, safe, and environmentally friendly methods. Trust us to deliver reliable and efficient pest control solutions that keep your environment pest-free and secure.</p>
-                <p>We proudly serve the entire South Wales region, including Neath, Port Talbot, Swansea, and other areas. Our team is committed to delivering exceptional service with a focus on customer satisfaction and long-term pest prevention. Contact us today to learn more about our pest control services and how we can assist you in maintaining a pest-free environment.</p>
-            </section>
-            <section class="services">
-                <div class="service-container">
-                    <div class="service-box">
-                        <img src="images/rat2.jpg" alt="Rat Control" class="service-img">
-                        <h3>Rat Control and Mouse Control</h3>
-                        <p>At Welsh Town and Country Pest Services, we specialize in comprehensive rat and mouse control solutions across Neath, Port Talbot, Swansea, Llanelli, Brecon, and Merthyr. Our expert team provides thorough inspections, strategic trapping, and targeted baiting to effectively eliminate rodents from your property. Whether you're dealing with a small mouse infestation or a larger rat problem, our tailored approach ensures efficient and lasting results. We also offer preventative measures to protect your home, business, or agricultural property from future rodent issues. Trust us for reliable, professional pest management and experience a pest-free environment with our top-notch rodent control services.</p>
-                    </div>
-                    <div class="service-box">
-                        <img src="images/cockroaches1.jpg" alt="Cockroach Control" class="service-img">
-                        <h3>Insect Control Management</h3>
-                        <p>Welsh Town and Country Pest Services provides expert insect management solutions throughout Neath, Port Talbot, and Swansea. Our specialized team addresses a wide range of insect issues, including ants, fleas, bedbugs, cockroaches, and more. We utilize targeted treatments and advanced techniques to effectively eliminate infestations and prevent future problems. Our comprehensive pest control services are designed to protect your home, business, or agricultural property from insect-related damage and discomfort. Rely on our professional expertise for thorough and reliable insect management that ensures a clean, pest-free environment.</p>
-                    </div>
-                    <div class="service-box">
-                        <img src="images/squrrielshed.jpg" alt="Squirrel Control" class="service-img">
-                        <h3>Nuisance Wildlife Removal</h3>
-                        <p>Welsh Town and Country Pest Services offers specialized management for a variety of other pests, including squirrels, birds, and more. Our expert team is skilled in the safe and humane removal of nuisance wildlife, ensuring minimal disruption to your property. We use effective techniques to handle infestations and prevent future issues, providing peace of mind and maintaining the safety and comfort of your home or business. Whether you're dealing with wildlife intrusions or seeking preventative measures, our services are tailored to meet your specific needs.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
+
+        <!-- Main content goes here -->
     </div>
 </body>
 </html>
