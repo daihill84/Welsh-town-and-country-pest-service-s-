@@ -14,25 +14,14 @@
     <meta name="geo.placename" content="Resolven, Neath">
     <meta name="geo.region" content="GB-NE">
     <title>Welsh Town and Country Pest Services</title>
-    <link rel="stylesheet" href="styles/desktop.css">
-    <link rel="stylesheet" href="styles/mobile.css" media="only screen and (max-width: 768px)">
     <style>
-        /* General Styles for Desktop and Mobile */
-        body, html {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            height: 60%;
-            width: 60%;
-        }
-
         /* Video Container Styles */
         .video-container {
-            position: centre;
+            position: fixed;
             top: 0;
             left: 0;
-            width: 60%;
-            height: 60%;
+            width: 100%;
+            height: 100%;
             overflow: hidden;
             z-index: 1;
         }
@@ -40,15 +29,26 @@
         /* Video Styles */
         video {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100vw; /* Viewport width */
-            height: 100vh; /* Viewport height */
-            object-fit: cover;
-            transform: translate(-50%, -50%);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure video covers the container while maintaining aspect ratio */
+            background: black; /* Optional: add a background color to cover any gaps */
+        }
+
+        /* Main Content Styles */
+        #mainContent {
+            position: relative;
+            z-index: 2;
+            display: none;
+        }
+
+        header {
+            position: relative;
+            z-index: 2;
         }
     </style>
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRTRYP4T8D"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -68,6 +68,7 @@
 
     <!-- Main Content -->
     <div id="mainContent" class="content">
+        <!-- Your main content goes here -->
         <header>
             <div class="header-container">
                 <div class="logo-container">
@@ -135,7 +136,7 @@
                     <div class="service-box">
                         <img src="images/squrrielshed.jpg" alt="Squirrel Control" class="service-img">
                         <h3>Nuisance Wildlife Removal</h3>
-                        <p>Welsh Town and Country Pest Services offers specialized management for a variety of other pests, including squirrels, birds, and more. Our expert team is skilled in the safe and humane removal of nuisance wildlife, ensuring minimal disruption to your property. We use effective techniques to handle infestations and prevent future issues, providing peace of mind and maintaining the safety and comfort of your property.</p>
+                        <p>Welsh Town and Country Pest Services offers specialized management for a variety of other pests, including squirrels, birds, and more. Our expert team is skilled in the safe and humane removal of nuisance wildlife, ensuring minimal disruption to your property. We use effective techniques to handle infestations and prevent future issues, providing peace of mind and maintaining the safety and comfort of your home or business. Whether you're dealing with wildlife intrusions or seeking preventative measures, our services are tailored to meet your specific needs.</p>
                     </div>
                 </div>
             </section>
