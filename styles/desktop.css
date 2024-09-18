@@ -177,25 +177,26 @@ footer a:hover {
 
 /* Video Container Styles */
 .video-container {
-    position: center;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Video Styles */
 video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 80%;
-    object-fit: contain; /* Ensure video covers the container while maintaining aspect ratio */
-    background: sskyblue; /* 
+    width: 80%; /* Set the video width */
+    height: 80%; /* Set the video height */
+    object-fit: contain; /* Ensure video fits within the container while maintaining aspect ratio */
+    background: skyblue; /* Corrected background color */
 }
+
 
 /* Main Content Styles */
 #mainContent {
