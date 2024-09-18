@@ -201,6 +201,26 @@ footer a {
     text-decoration: none;
 }
 
+/* WhatsApp Images */
+.left-img, .right-img {
+    position: fixed;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    z-index: 10; /* Ensure it is above other content */
+}
+
+.left-img {
+    left: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-img {
+    right: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 footer a:hover {
     text-decoration: underline;
 }
