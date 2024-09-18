@@ -46,18 +46,11 @@ header {
 }
 
 .contact-info a {
-    color: #F5F5DC;
+    color: red;
     font-size: 22px; 
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-}
-
-/* Hide email and WhatsApp on mobile view */
-@media only screen and (max-width: 767px) {
-    .email, .whatsapp {
-        display: none; /* Hide these elements on mobile */
-    }
 }
 
 /* Navigation */
@@ -166,6 +159,13 @@ form button {
     display: flex;
     flex-direction: column; /* Stack the service boxes vertically */
     align-items: center; /* Center align them */
+}
+
+video {
+    width: 100vw; /* Viewport width */
+    height: 100vh; /* Viewport height */
+    object-fit: contain; /* Cover the entire screen while maintaining aspect ratio */
+    background: black;
 }
 
 .service-box {
