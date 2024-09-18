@@ -16,50 +16,18 @@
     <title>Welsh Town and Country Pest Services</title>
     <link rel="stylesheet" href="styles/desktop.css">
     <link rel="stylesheet" href="styles/mobile.css" media="only screen and (max-width: 768px)">
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRTRYP4T8D"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-BRTRYP4T8D');
-    </script>
-    <style>
-        /* Styles for the video container */
-        .video-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-            z-index: 1;
-        }
-        video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        /* Hide content initially */
-        .content {
-            display: none;
-        }
-    </style>
 </head>
 <body>
     <!-- Video Container -->
     <div class="video-container">
-        <video id="introVideo" autoplay>
+        <video id="introVideo" autoplay muted playsinline>
             <source src="videos/startupad.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
     <!-- Main Content -->
-    <div class="content" id="mainContent">
+    <div id="mainContent" class="content">
         <header>
             <div class="header-container">
                 <div class="logo-container">
@@ -127,4 +95,28 @@
                     <div class="service-box">
                         <img src="images/squrrielshed.jpg" alt="Squirrel Control" class="service-img">
                         <h3>Nuisance Wildlife Removal</h3>
-                        <p>Welsh Town and Country Pest Services offers specialized management for a variety of other pests, including squirrels, birds, and more. Our expert team is skilled in the safe and humane removal of nuisance wildlife, ensuring minimal disruption to your property. We
+                        <p>Welsh Town and Country Pest Services offers specialized management for a variety of other pests, including squirrels, birds, and more. Our expert team is skilled in the safe and humane removal of nuisance wildlife, ensuring minimal disruption to your property. We use effective techniques to handle infestations and prevent future issues, providing peace of mind and maintaining the safety and comfort of your home or business. Whether you're dealing with wildlife intrusions or seeking preventative solutions, trust us for professional and reliable wildlife removal services.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <p>&copy; 2024 Welsh Town and Country Pest Services | All Rights Reserved</p>
+            </div>
+        </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('introVideo');
+            var content = document.getElementById('mainContent');
+
+            // When the video ends, hide the video container and show the main content
+            video.addEventListener('ended', function() {
+                document.querySelector('.video-container').style.display = 'none';
+                content.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
