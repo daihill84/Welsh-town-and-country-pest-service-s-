@@ -204,7 +204,7 @@ footer a {
 /* WhatsApp Images */
 .left-img, .right-img {
     position: fixed;
-    width: 100px; /* Adjust size as needed */
+    width: 20px; /* Adjust size as needed */
     height: auto;
     z-index: 10; /* Ensure it is above other content */
 }
