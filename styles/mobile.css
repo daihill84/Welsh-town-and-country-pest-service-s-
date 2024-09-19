@@ -37,17 +37,23 @@ header {
     max-width: 100px; /* Smaller logo for mobile */
 }
 
+/* Hide wasp image on mobile */
+.header-img img[src*="wasp.jpg"] {
+    display: none;
+}
+
 /* Contact info */
 .contact-info {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stack contact items vertically */
+    align-items: center;
     gap: 15px; /* Spacing between contact items */
     margin-top: 10px;
 }
 
 .contact-info a {
     color: #FF6F5E;
-    font-size: 22px; 
+    font-size: 22px;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
@@ -161,13 +167,6 @@ form button {
     align-items: center; /* Center align them */
 }
 
-video {
-    width: 100vw; /* Viewport width */
-    height: 100vh; /* Viewport height */
-    object-fit: contain; /* Cover the entire screen while maintaining aspect ratio */
-    background: black;
-}
-
 .service-box {
     background: skyblue;
     border: 1px solid #ddd;
@@ -201,24 +200,35 @@ footer a {
     text-decoration: none;
 }
 
-/* WhatsApp Images */
-.left-img, .right-img {
-    position: fixed; /* Fixes the position relative to the viewport */
-    width: 10px; /* Adjust size as needed */
-    height: auto;
-    z-index: 10; /* Ensure it is above other content */
-    /* Optional: Add a box shadow for better visibility */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+footer a:hover {
+    text-decoration: underline;
 }
 
-.left-img {
-    left: 10px; /* Position from the left edge */
-    top: 50%; /* Position vertically in the center */
-    transform: translateY(-50%); /* Center the image vertically */
+/* Video Container Styles */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.right-img {
-    right: 10px; /* Position from the right edge */
-    top: 50%; /* Position vertically in the center */
-    transform: translateY(-50%); /* Center the image vertically */
+/* Video Styles */
+video {
+    width: 100vw; /* Viewport width */
+    height: 100vh; /* Viewport height */
+    object-fit: contain; /* Cover the entire screen while maintaining aspect ratio */
+    background: black;
+}
+
+/* Main Content Styles */
+#mainContent {
+    position: relative;
+    z-index: 2;
+    display: none;
 }
