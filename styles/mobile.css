@@ -1,4 +1,4 @@
-/* Reset some default browser styles */
+* Reset some default browser styles */
 * {
     margin: 0;
     padding: 0;
@@ -40,7 +40,168 @@ header {
 /* Contact info */
 .contact-info {
     display: flex;
-    flex-direction: column; /* Stack contact items vertically */
-    align-items: center;
+    justify-content: center;
     gap: 15px; /* Spacing between contact items */
-    margin-top: 
+    margin-top: 10px;
+}
+
+.contact-info a {
+    color: #FF6F5E;
+    font-size: 22px; 
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Navigation */
+nav {
+    background: #003300;
+}
+
+nav ul.main-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack menu items vertically for mobile */
+    align-items: center;
+}
+
+nav ul.main-menu li {
+    position: relative;
+}
+
+nav ul.main-menu li a {
+    color: #fff;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 100%; /* Make menu items fit within the screen */
+}
+
+nav ul.main-menu li a:hover {
+    background: #005700;
+}
+
+/* Dropdown Menu */
+nav ul.dropdown-menu {
+    display: none; /* Hide dropdown menu by default */
+    position: static; /* Change position for mobile */
+    background: #003300;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.dropdown-menu li a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul.dropdown-menu li a:hover {
+    background: #005700;
+}
+
+/* Dropdown menu display on mobile */
+nav li:hover .dropdown-menu {
+    display: block;
+}
+
+/* Main content */
+main {
+    padding: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    padding: 15px;
+}
+
+.contact-form h2 {
+    font-size: 22px; /* Adjust font size for mobile */
+}
+
+.contact-form p {
+    font-size: 16px; /* Adjust font size for mobile */
+}
+
+.contact-details h3 {
+    font-size: 18px; /* Adjust font size for mobile */
+}
+
+.contact-details p {
+    font-size: 16px; /* Adjust font size for mobile */
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    background-color: #004d00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Service Boxes */
+.service-container {
+    display: flex;
+    flex-direction: column; /* Stack the service boxes vertically */
+    align-items: center; /* Center align them */
+}
+
+video {
+    width: 100vw; /* Viewport width */
+    height: 100vh; /* Viewport height */
+    object-fit: contain; /* Cover the entire screen while maintaining aspect ratio */
+    background: black;
+}
+
+.service-box {
+    background: skyblue;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    width: 100%; /* Full width for each box */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text in service boxes */
+}
+
+.service-img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* Footer */
+footer {
+    background: #003300;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}  now formobile makesureyoy dont alter the heading otherwise
