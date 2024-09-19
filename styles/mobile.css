@@ -203,24 +203,22 @@ footer a {
 
 /* WhatsApp Images */
 .left-img, .right-img {
-    position: fixed;
-    width: 5px; /* Adjust size as needed */
+    position: fixed; /* Fixes the position relative to the viewport */
+    width: 100px; /* Adjust size as needed */
     height: auto;
     z-index: 10; /* Ensure it is above other content */
+    /* Optional: Add a box shadow for better visibility */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .left-img {
-    left: 10px; /* Adjust as needed */
-    top: 50%;
-    transform: translateY(-50%);
+    left: 10px; /* Position from the left edge */
+    top: 50%; /* Position vertically in the center */
+    transform: translateY(-50%); /* Center the image vertically */
 }
 
 .right-img {
-    right: 10px; /* Adjust as needed */
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-footer a:hover {
-    text-decoration: underline;
+    right: 10px; /* Position from the right edge */
+    top: 50%; /* Position vertically in the center */
+    transform: translateY(-50%); /* Center the image vertically */
 }
