@@ -1,4 +1,4 @@
-* Reset some default browser styles */
+/* Reset some default browser styles */
 * {
     margin: 0;
     padding: 0;
@@ -46,7 +46,7 @@ header {
 }
 
 .contact-info a {
-    color: orange;
+    color: red; /* Make contact info red */
     font-size: 22px; 
     text-decoration: none;
     font-weight: bold;
@@ -129,10 +129,20 @@ main {
 
 .contact-details h3 {
     font-size: 18px; /* Adjust font size for mobile */
+    color: red; /* Keep contact heading red */
 }
 
 .contact-details p {
     font-size: 16px; /* Adjust font size for mobile */
+    color: red; /* Change body contact details to red */
+}
+
+.contact-details a {
+    color: red; /* Make contact info links red */
+}
+
+.contact-details strong {
+    color: red; /* Ensure strong text in contact details is red */
 }
 
 form label {
@@ -184,7 +194,6 @@ video {
     margin: 0 auto;
 }
 
-
 /* Footer */
 footer {
     background: #003300;
@@ -204,4 +213,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}  now formobile makesureyoy dont alter the heading otherwise
+}
