@@ -42,7 +42,7 @@ header {
 }
 
 .contact-info a {
-    color: red;
+    color: red; /* Heading contact info stays red */
     text-decoration: none;
     font-weight: bold;
     margin: 0 10px;
@@ -144,6 +144,16 @@ main {
     width: 100%;
     height: auto;
     margin: 0 auto;
+}
+
+/* Styling for the body contact details */
+.contact-details a {
+    color: red; /* Change body contact details from blue to red */
+    text-decoration: none;
+}
+
+.contact-details strong {
+    color: red; /* Ensure strong text in contact details is red */
 }
 
 footer {
