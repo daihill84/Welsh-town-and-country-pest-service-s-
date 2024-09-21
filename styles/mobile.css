@@ -214,3 +214,13 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* Wasp Image for Mobile - Ensure it fits neatly and maintains aspect ratio */
+.wasp-image {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    object-fit: contain; /* Make sure the image scales without distortion */
+}
+
