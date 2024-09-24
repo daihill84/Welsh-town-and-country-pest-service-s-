@@ -23,6 +23,42 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'AW-16506312390');
+
+        function redirectBasedOnLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var userLat = position.coords.latitude;
+                    var userLong = position.coords.longitude;
+
+                    // Calculate distance from Brecon (51.9475, -3.3927) and Merthyr Tydfil (51.7420, -3.3830)
+                    var breconDistance = getDistance(userLat, userLong, 51.9475, -3.3927);
+                    var merthyrDistance = getDistance(userLat, userLong, 51.7420, -3.3830);
+
+                    if (breconDistance <= 15) {
+                        window.location.href = "brecon.html";
+                    } else if (merthyrDistance <= 15) {
+                        window.location.href = "merthyr.html";
+                    }
+                }, function() {
+                    console.log("Geolocation permission denied.");
+                });
+            } else {
+                console.log("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function getDistance(lat1, lon1, lat2, lon2) {
+            var R = 6371; // Radius of the Earth in km
+            var dLat = (lat2 - lat1) * Math.PI / 180;
+            var dLon = (lon2 - lon1) * Math.PI / 180;
+            var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            return R * c; // Distance in km
+        }
+
+        window.onload = redirectBasedOnLocation;
     </script>
 </head>
 <body>
@@ -78,16 +114,15 @@ At Welsh Town and Country, we specialize in a wide range of pest control service
 
 We proudly serve the entire South Wales region, including Neath, Port Talbot, Swansea, and other areas. Our team is committed to delivering exceptional service with a focus on customer satisfaction and long-term pest prevention. Contact us today to learn more about our pest control services and how we can assist you in maintaining a pest-free environment.</p>
         </section>
-       <div class="wasp-section" style="text-align: center; margin: 20px 0;">
-    <a href="wasp_removal.html">
-        <img src="images/wasp1.png" alt="Wasp Control" class="wasp-image">
-    </a>
-    <p style="color: red;">
-        £80 per wasp nest treatment<br>
-        <a href="wasp_removal.html" style="color: red; text-decoration: bold;">Click here for info</a>
-    </p>
-</div>
-
+        <div class="wasp-section" style="text-align: center; margin: 20px 0;">
+            <a href="wasp_removal.html">
+                <img src="images/wasp1.png" alt="Wasp Control" class="wasp-image">
+            </a>
+            <p style="color: red;">
+                £80 per wasp nest treatment<br>
+                <a href="wasp_removal.html" style="color: red; text-decoration: bold;">Click here for info</a>
+            </p>
+        </div>
 
         <section class="services">
             <div class="service-container">
@@ -102,15 +137,15 @@ We proudly serve the entire South Wales region, including Neath, Port Talbot, Sw
                     <p>Welsh Town and Country Pest Services specializes in effective insect control, addressing issues with ants, fleas, bedbugs, and other common pests. Our comprehensive pest control solutions cater to domestic, commercial, and agricultural needs across Resolven, Neath. We use targeted treatments and preventative measures to ensure a pest-free environment, combining expertise and safety to manage insect infestations efficiently.</p>
                 </div>
                 <div class="service-box">
-                    <img src="images/squrrielshed.jpg" alt="Squirrel Control" class="service-img">
-                    <h3>Nuisance Wildlife Removal</h3>
-                    <p>Welsh Town and Country Pest Services offers comprehensive pest control throughout Resolven, Neath, and nearby areas. Our services include effective rodent control, insect management, and nuisance wildlife removal. We handle issues with squirrels, foxes, birds, and moles, providing targeted solutions to protect your property. Our team uses safe, efficient methods to handle these pests and ensure a secure environment for your home or business.</p>
+                    <img src="images/others1.jpg" alt="Other Pests" class="service-img">
+                    <h3>Other Pest Solutions</h3>
+                    <p>We also tackle other pest problems, including birds, wildlife, and specific agricultural pest concerns. Our trained professionals utilize humane and effective methods to manage various pest issues, ensuring the well-being of your property and environment. Contact us for tailored pest solutions designed to address your unique challenges.</p>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Welsh Town and Country Pest Services. All rights reserved. <a href="contact.html">Contact Us</a></p>
+        <p>&copy; 2024 Welsh Town and Country Pest Services | Email: <a href="mailto:info@welshtownandcountry.co.uk">info@welshtownandcountry.co.uk</a> | Phone: <a href="tel:+447375303124">07375 303124</a></p>
     </footer>
 </body>
 </html>
