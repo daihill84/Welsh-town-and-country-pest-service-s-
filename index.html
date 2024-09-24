@@ -16,7 +16,7 @@
     <title>Welsh Town and Country Pest Services | Expert Pest Control in Neath, Swansea, Port Talbot</title>
     <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 769px)">
     <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 768px)">
-    
+
     <!-- Google Tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16506312390"></script>
     <script>
@@ -26,29 +26,47 @@
         gtag('config', 'AW-16506312390');
     </script>
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Welsh Town and Country Pest Services",
-      "image": "https://www.welshtownandcountry.co.uk/images/logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Your Street Address",
-        "addressLocality": "Resolven",
-        "addressRegion": "Neath Port Talbot",
-        "postalCode": "SA11 4DP",
-        "addressCountry": "UK"
-      },
-      "telephone": "+447375303124",
-      "email": "info@welshtownandcountry.co.uk",
-      "url": "https://www.welshtownandcountry.co.uk",
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=61564861332160"
-      ],
-      "description": "Welsh Town and Country Pest Services provides expert rat control services for domestic properties in Neath, Port Talbot, Swansea, and South Wales. We specialize in eliminating mice, offering effective and safe domestic pest control methods."
-    }
+    <!-- Geolocation Script -->
+    <script>
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var lat = position.coords.latitude;
+                var lon = position.coords.longitude;
+
+                // Brecon Coordinates: Latitude 51.9460, Longitude -3.3884
+                var breconLat = 51.9460;
+                var breconLon = -3.3884;
+
+                var distance = getDistanceFromLatLonInKm(lat, lon, breconLat, breconLon);
+
+                // If the user is within 10 km of Brecon, redirect to brecon.html
+                if (distance < 10) {
+                    window.location.href = "https://www.welshtownandcountry.co.uk/brecon.html";
+                }
+            }, function(error) {
+                console.error("Geolocation error: ", error.message);
+            });
+        } else {
+            console.error("Geolocation is not supported by this browser.");
+        }
+
+        // Function to calculate the distance between two latitude/longitude points
+        function getDistanceFromLatLonInKm(lat1, lon1, lat2, lon2) {
+            var R = 6371; // Radius of the earth in km
+            var dLat = deg2rad(lat2 - lat1);
+            var dLon = deg2rad(lon2 - lon1);
+            var a = 
+                Math.sin(dLat/2) * Math.sin(dLat/2) +
+                Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
+                Math.sin(dLon/2) * Math.sin(dLon/2);
+            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            var distance = R * c; // Distance in km
+            return distance;
+        }
+
+        function deg2rad(deg) {
+            return deg * (Math.PI / 180);
+        }
     </script>
 </head>
 <body>
@@ -132,35 +150,40 @@
                     <div class="service-box">
                         <img src="images/rat2.jpg" alt="Rat Control" class="service-img">
                         <h3>Rat Control and Mouse Control</h3>
-                        <p>We specialize in comprehensive rat and mouse control solutions across Neath, Port Talbot, Swansea, Llanelli, Brecon, and Merthyr. Our expert team provides thorough inspections, strategic trapping, and targeted baiting to eliminate rodents. We also offer preventative measures for long-term protection.</p>
+                        <p>We specialize in comprehensive rat and mouse control solutions across Neath, Port Talbot, Swansea, Llanelli, Brecon, and Merthyr. Our experienced team uses effective strategies to eliminate rodent infestations quickly and efficiently.</p>
                     </div>
                     <div class="service-box">
-                        <img src="images/cockroaches1.jpg" alt="Cockroach Control" class="service-img">
-                        <h3>Insect Control Management</h3>
-                        <p>Our team addresses a wide range of insect issues, including ants, fleas, bedbugs, and cockroaches. We use targeted treatments to eliminate infestations and prevent future problems.</p>
+                        <img src="images/insect.jpg" alt="Insect Control" class="service-img">
+                        <h3>Insect Control</h3>
+                        <p>Our insect control services cover a variety of pests, including ants, cockroaches, and bedbugs. We employ targeted treatments to ensure your home or business remains free from invasive insects.</p>
                     </div>
                     <div class="service-box">
-                        <img src="images/wasp1.png" alt="Wasp Control" class="service-img">
-                        <h3>Wasp Nest Removal</h3>
-                        <p>For expert wasp nest removal, contact us today. We provide fast and safe removal services at competitive rates, ensuring your property is free of hazardous nests.</p>
+                        <img src="images/other.jpg" alt="Other Pest Control" class="service-img">
+                        <h3>Other Pest Control</h3>
+                        <p>We offer tailored pest control solutions for other pests, including birds and wildlife. Our approach ensures humane and effective removal of unwanted creatures from your property.</p>
                     </div>
                 </div>
             </section>
         </main>
 
-        <!-- Footer -->
         <footer>
-            <p>Contact us for professional pest control services in Neath, Port Talbot, Swansea, and beyond. We are available 24/7 for emergency pest management.</p>
-            <p>Phone: 07375 303124 | Email: <a href="mailto:info@welshtownandcountry.co.uk">info@welshtownandcountry.co.uk</a></p>
+            <div class="footer-content">
+                <p>&copy; 2024 Welsh Town and Country Pest Services | <a href="privacy-policy.html">Privacy Policy</a></p>
+                <p>Contact us: <a href="mailto:info@welshtownandcountry.co.uk">info@welshtownandcountry.co.uk</a> | Phone: <a href="tel:+447375303124">07375 303124</a></p>
+            </div>
         </footer>
     </div>
 
-    <!-- JavaScript for Video -->
     <script>
-        document.getElementById('introVideo').addEventListener('ended', function () {
-            document.getElementById('mainContent').style.display = 'block';
-            document.getElementById('videoContainer').style.display = 'none';
-        });
+        // Video handling
+        const videoContainer = document.getElementById('videoContainer');
+        const introVideo = document.getElementById('introVideo');
+        const mainContent = document.getElementById('mainContent');
+
+        introVideo.onended = function() {
+            videoContainer.style.display = 'none';
+            mainContent.style.display = 'block';
+        };
     </script>
 </body>
 </html>
