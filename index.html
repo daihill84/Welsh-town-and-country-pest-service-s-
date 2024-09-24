@@ -24,41 +24,41 @@
         gtag('js', new Date());
         gtag('config', 'AW-16506312390');
 
-        function redirectBasedOnLocation() {
+        function calculateDistance(lat1, lon1, lat2, lon2) {
+            const R = 6371; // Radius of the Earth in km
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                      Math.sin(dLon/2) * Math.sin(dLon/2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            return R * c; // Distance in km
+        }
+
+        function redirectUser() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position) {
-                    var userLat = position.coords.latitude;
-                    var userLong = position.coords.longitude;
+                    const userLat = position.coords.latitude;
+                    const userLon = position.coords.longitude;
 
-                    // Calculate distance from Brecon (51.9475, -3.3927) and Merthyr Tydfil (51.7420, -3.3830)
-                    var breconDistance = getDistance(userLat, userLong, 51.9475, -3.3927);
-                    var merthyrDistance = getDistance(userLat, userLong, 51.7420, -3.3830);
+                    const brecon = { lat: 51.9460, lon: -3.3989 }; // Brecon coordinates
+                    const merthyr = { lat: 51.7500, lon: -3.3762 }; // Merthyr coordinates
 
-                    if (breconDistance <= 15) {
+                    const distanceToBrecon = calculateDistance(userLat, userLon, brecon.lat, brecon.lon);
+                    const distanceToMerthyr = calculateDistance(userLat, userLon, merthyr.lat, merthyr.lon);
+
+                    if (distanceToBrecon <= 15) {
                         window.location.href = "brecon.html";
-                    } else if (merthyrDistance <= 15) {
+                    } else if (distanceToMerthyr <= 15) {
                         window.location.href = "merthyr.html";
                     }
-                }, function() {
-                    console.log("Geolocation permission denied.");
                 });
             } else {
                 console.log("Geolocation is not supported by this browser.");
             }
         }
 
-        function getDistance(lat1, lon1, lat2, lon2) {
-            var R = 6371; // Radius of the Earth in km
-            var dLat = (lat2 - lat1) * Math.PI / 180;
-            var dLon = (lon2 - lon1) * Math.PI / 180;
-            var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-                    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
-                    Math.sin(dLon / 2) * Math.sin(dLon / 2);
-            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-            return R * c; // Distance in km
-        }
-
-        window.onload = redirectBasedOnLocation;
+        window.onload = redirectUser; // Call the redirect function when the page loads
     </script>
 </head>
 <body>
@@ -108,11 +108,9 @@
     <main>
         <section class="intro">
             <h2>Expert Rodent Control and Insect Management</h2>
-            <p>Welcome to Welsh Town and Country Pest Services, your premier choice for comprehensive pest control solutions in Neath, Port Talbot, Swansea, Llanelli, Brecon, and Merthyr. Our expert team is dedicated to providing top-notch pest management services for both residential and commercial properties. Whether you're dealing with troublesome rodents, invasive insects, or other persistent pests, we offer tailored solutions to meet your needs.
-
-At Welsh Town and Country, we specialize in a wide range of pest control services, including rodent control, insect management, and wildlife removal. Our professional approach ensures that your home, business, or agricultural property is protected from pests with effective, safe, and environmentally friendly methods. Trust us to deliver reliable and efficient pest control solutions that keep your environment pest-free and secure.
-
-We proudly serve the entire South Wales region, including Neath, Port Talbot, Swansea, and other areas. Our team is committed to delivering exceptional service with a focus on customer satisfaction and long-term pest prevention. Contact us today to learn more about our pest control services and how we can assist you in maintaining a pest-free environment.</p>
+            <p>Welcome to Welsh Town and Country Pest Services, your premier choice for comprehensive pest control solutions in Neath, Port Talbot, Swansea, Llanelli, Brecon, and Merthyr. Our expert team is dedicated to providing top-notch pest management services for both residential and commercial properties. Whether you're dealing with troublesome rodents, invasive insects, or other persistent pests, we offer tailored solutions to meet your needs.</p>
+            <p>At Welsh Town and Country, we specialize in a wide range of pest control services, including rodent control, insect management, and wildlife removal. Our professional approach ensures that your home, business, or agricultural property is protected from pests with effective, safe, and environmentally friendly methods. Trust us to deliver reliable and efficient pest control solutions that keep your environment pest-free and secure.</p>
+            <p>We proudly serve the entire South Wales region, including Neath, Port Talbot, Swansea, and other areas. Our team is committed to delivering exceptional service with a focus on customer satisfaction and long-term pest prevention. Contact us today to learn more about our pest control services and how we can assist you in maintaining a pest-free environment.</p>
         </section>
         <div class="wasp-section" style="text-align: center; margin: 20px 0;">
             <a href="wasp_removal.html">
@@ -123,7 +121,6 @@ We proudly serve the entire South Wales region, including Neath, Port Talbot, Sw
                 <a href="wasp_removal.html" style="color: red; text-decoration: bold;">Click here for info</a>
             </p>
         </div>
-
         <section class="services">
             <div class="service-container">
                 <div class="service-box">
@@ -137,15 +134,18 @@ We proudly serve the entire South Wales region, including Neath, Port Talbot, Sw
                     <p>Welsh Town and Country Pest Services specializes in effective insect control, addressing issues with ants, fleas, bedbugs, and other common pests. Our comprehensive pest control solutions cater to domestic, commercial, and agricultural needs across Resolven, Neath. We use targeted treatments and preventative measures to ensure a pest-free environment, combining expertise and safety to manage insect infestations efficiently.</p>
                 </div>
                 <div class="service-box">
-                    <img src="images/others1.jpg" alt="Other Pests" class="service-img">
-                    <h3>Other Pest Solutions</h3>
-                    <p>We also tackle other pest problems, including birds, wildlife, and specific agricultural pest concerns. Our trained professionals utilize humane and effective methods to manage various pest issues, ensuring the well-being of your property and environment. Contact us for tailored pest solutions designed to address your unique challenges.</p>
+                    <img src="images/wasp2.jpg" alt="Wasp Control" class="service-img">
+                    <h3>Wasp Control</h3>
+                    <p>Welsh Town and Country Pest Services offers reliable wasp control solutions, ensuring your safety and comfort during the warmer months. Our expert team specializes in safe and effective wasp nest removal and prevention, helping you avoid potential stings and disruptions. With our tailored treatments, we ensure a wasp-free environment, allowing you to enjoy your outdoor spaces with peace of mind.</p>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Welsh Town and Country Pest Services | Email: <a href="mailto:info@welshtownandcountry.co.uk">info@welshtownandcountry.co.uk</a> | Phone: <a href="tel:+447375303124">07375 303124</a></p>
+        <div class="footer-container">
+            <p>© 2024 Welsh Town and Country Pest Services. All rights reserved.</p>
+            <p>For inquiries, please contact us at <a href="mailto:info@welshtownandcountry.co.uk">info@welshtownandcountry.co.uk</a> or call <a href="tel:+447375303124">07375 303124</a>.</p>
+        </div>
     </footer>
 </body>
 </html>
