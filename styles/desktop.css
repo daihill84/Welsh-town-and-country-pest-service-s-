@@ -12,7 +12,7 @@ body {
     color: #333;
     background-color: skyblue;
     overflow-x: hidden; /* Prevent horizontal scroll */
-     font-size: 20px; /* Change this value to increase font size */
+     font-size: 24px; /* Change this value to increase font size */
 }
 }
 
