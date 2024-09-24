@@ -26,33 +26,43 @@
         gtag('config', 'AW-16506312390');
     </script>
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Welsh Town and Country Pest Services",
-      "image": "https://www.welshtownandcountry.co.uk/images/logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Your Street Address",
-        "addressLocality": "Brecon",
-        "addressRegion": "Powys",
-        "postalCode": "LD3",
-        "addressCountry": "UK"
-      },
-      "telephone": "+447375303124",
-      "email": "info@welshtownandcountry.co.uk",
-      "url": "https://www.welshtownandcountry.co.uk/brecon.html",
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=61564861332160"
-        "priceRange": "£ - £££"
-      ],
-      "description": "Welsh Town and Country Pest Services offers expert pest control services for domestic and commercial properties in Brecon and surrounding areas, specializing in rodent control, insect management, and wasp nest removal."
-    }
-    </script>
-</head>
-<body>
+   <!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Welsh Town and Country Pest Services",
+  "image": "https://www.welshtownandcountry.co.uk/images/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Your Street Address",  // Replace with your actual street address
+    "addressLocality": "Brecon",
+    "addressRegion": "Powys",
+    "postalCode": "LD3",
+    "addressCountry": "UK"
+  },
+  "telephone": "+447375303124",
+  "email": "info@welshtownandcountry.co.uk",
+  "url": "https://www.welshtownandcountry.co.uk/brecon.html",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61564861332160"
+  ],
+  "description": "Welsh Town and Country Pest Services offers expert pest control services for domestic and commercial properties in Brecon and surrounding areas, specializing in rodent control, insect management, and wasp nest removal.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "GBP",
+    "price": "80",  // Replace with your service price if different
+    "priceRange": "£ - ££",  // Adjust according to your services
+    "url": "https://www.welshtownandcountry.co.uk/brecon.html",
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "24"
+  }
+}
+</script>
     <!-- Video Container -->
     <div class="video-container" id="videoContainer">
         <video id="introVideo" autoplay muted playsinline>
