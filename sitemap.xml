@@ -71,6 +71,22 @@
         <priority>0.9</priority>
     </url>
 
+    <!-- Brecon Pest Control Page -->
+    <url>
+        <loc>https://www.welshtownandcountry.co.uk/brecon.html</loc>
+        <lastmod>2024-09-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Merthyr Pest Control Page -->
+    <url>
+        <loc>https://www.welshtownandcountry.co.uk/merthyr.html</loc>
+        <lastmod>2024-09-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
     <!-- Contact Page -->
     <url>
         <loc>https://www.welshtownandcountry.co.uk/contact.html</loc>
