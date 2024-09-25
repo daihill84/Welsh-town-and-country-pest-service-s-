@@ -16,7 +16,7 @@
     <title>Welsh Town and Country Pest Services | Pest Control in Brecon</title>
     <link rel="stylesheet" href="../styles/desktop.css" media="screen and (min-width: 769px)">
     <link rel="stylesheet" href="../styles/mobile.css" media="screen and (max-width: 768px)">
-    
+
     <!-- Google Tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16506312390"></script>
     <script>
@@ -26,43 +26,75 @@
         gtag('config', 'AW-16506312390');
     </script>
 
-   <!-- Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Welsh Town and Country Pest Services",
-  "image": "https://www.welshtownandcountry.co.uk/images/logo.png",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Your Street Address",  // Replace with your actual street address
-    "addressLocality": "Brecon",
-    "addressRegion": "Powys",
-    "postalCode": "LD3",
-    "addressCountry": "UK"
-  },
-  "telephone": "+447375303124",
-  "email": "info@welshtownandcountry.co.uk",
-  "url": "https://www.welshtownandcountry.co.uk/brecon.html",
-  "sameAs": [
-    "https://www.facebook.com/profile.php?id=61564861332160"
-  ],
-  "description": "Welsh Town and Country Pest Services offers expert pest control services for domestic and commercial properties in Brecon and surrounding areas, specializing in rodent control, insect management, and wasp nest removal.",
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "GBP",
-    "price": "80",  // Replace with your service price if different
-    "priceRange": "£80 - £500",  // Adjust according to your services
-    "url": "https://www.welshtownandcountry.co.uk/brecon.html",
-    "availability": "https://schema.org/InStock"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "24"
-  }
-}
-</script>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Welsh Town and Country Pest Services",
+        "image": "https://www.welshtownandcountry.co.uk/images/logo.png",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Your Street Address",  // Replace with your actual street address
+            "addressLocality": "Brecon",
+            "addressRegion": "Powys",
+            "postalCode": "LD3",
+            "addressCountry": "UK"
+        },
+        "telephone": "+447375303124",
+        "email": "info@welshtownandcountry.co.uk",
+        "url": "https://www.welshtownandcountry.co.uk/brecon.html",
+        "sameAs": [
+            "https://www.facebook.com/profile.php?id=61564861332160"
+        ],
+        "description": "Welsh Town and Country Pest Services offers expert pest control services for domestic and commercial properties in Brecon and surrounding areas, specializing in rodent control, insect management, and wasp nest removal.",
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "GBP",
+            "price": "80",  // Replace with your service price if different
+            "priceRange": "£80 - £500",  // Adjust according to your services
+            "url": "https://www.welshtownandcountry.co.uk/brecon.html",
+            "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "24"
+        }
+    }
+    </script>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 10; /* Set a higher z-index for the video */
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cover the entire area */
+            opacity: 1; /* Fully opaque */
+        }
+        #mainContent {
+            position: relative;
+            z-index: 5; /* Set a lower z-index for the content */
+            display: none; /* Initially hide content */
+            color: #000; /* Make text color black for better visibility */
+            padding: 20px; /* Add padding */
+        }
+        /* Additional styles as needed */
+    </style>
+</head>
+<body>
     <!-- Video Container -->
     <div class="video-container" id="videoContainer">
         <video id="introVideo" autoplay muted playsinline>
@@ -72,7 +104,7 @@
     </div>
 
     <!-- Main Content -->
-    <div id="mainContent" class="content" style="display: none;">
+    <div id="mainContent" class="content">
         <header>
             <div class="header-container">
                 <div class="logo-container">
@@ -89,7 +121,7 @@
             </div>
             <nav>
                 <ul class="main-menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="brecon-pest-control.html">Home</a></li>
                     <li class="dropdown">
                         <a href="#">Domestic</a>
                         <ul class="dropdown-menu">
@@ -111,7 +143,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="agricultural/rodents.html">Rodent Control</a></li>
                             <li><a href="agricultural/others.html">Other Pests</a></li>
-                             <li><a href="agricultural/mole-catcher.html">Moles</a></li>
+                            <li><a href="agricultural/mole-catcher.html">Moles</a></li>
                         </ul>
                     </li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -134,45 +166,27 @@
                 </a>
                 <p style="color: red;">
                     £80 per wasp nest treatment<br>
-                    <a href="wasp-removal.html" style="color: red; text-decoration: underline;">Click here for info</a>
+                    <a href="wasp-removal.html" style="color: red; text-decoration: underline;">Learn More</a>
                 </p>
             </div>
-
-            <!-- Services Section -->
-            <section class="services">
-                <div class="service-container">
-                    <div class="service-box">
-                        <img src="images/rat2.jpg" alt="Rat Control" class="service-img">
-                        <h3>Rat Control and Mouse Control</h3>
-                        <p>We provide expert rat and mouse control in Brecon. Our team offers comprehensive inspections, trapping, and preventative measures to keep your home or business free of rodents.</p>
-                    </div>
-                    <div class="service-box">
-                        <img src="images/cockroaches1.jpg" alt="Cockroach Control" class="service-img">
-                        <h3>Insect Control Management</h3>
-                        <p>We address a wide range of insect issues, including fleas, bedbugs, and cockroaches. Our services are designed to eliminate infestations and prevent future insect problems.</p>
-                    </div>
-                    <div class="service-box">
-                        <img src="images/wasp1.png" alt="Wasp Control" class="service-img">
-                        <h3>Wasp Nest Removal</h3>
-                        <p>Fast, safe, and affordable wasp nest removal services in Brecon. Protect your family and property from dangerous wasps by contacting us today.</p>
-                    </div>
-                </div>
-            </section>
         </main>
 
-        <!-- Footer -->
         <footer>
-            <p>Contact us for professional pest control services in Brecon and surrounding areas. We are available 24/7 for emergency pest management.</p>
-            <p>Phone: 07375 303124 | Email: <a href="mailto:info@welshtownandcountry.co.uk">info@welshtownandcountry.co.uk</a></p>
+            <p>&copy; 2024 Welsh Town And Country Pest Services. All Rights Reserved.</p>
+            <p>Contact us: info@welshtownandcountry.co.uk | 07375 303124</p>
         </footer>
     </div>
 
-    <!-- JavaScript for Video -->
     <script>
-        document.getElementById('introVideo').addEventListener('ended', function () {
-            document.getElementById('mainContent').style.display = 'block';
-            document.getElementById('videoContainer').style.display = 'none';
-        });
+        // Hide the video after it ends and show the main content
+        const video = document.getElementById('introVideo');
+        const videoContainer = document.getElementById('videoContainer');
+        const mainContent = document.getElementById('mainContent');
+
+        video.onended = function() {
+            videoContainer.style.display = 'none'; // Hide video container
+            mainContent.style.display = 'block'; // Show main content
+        };
     </script>
 </body>
 </html>
