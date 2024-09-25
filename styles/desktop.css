@@ -238,3 +238,8 @@ video {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.mole-image {
+    width: 150px;
+    height: auto;
+}
