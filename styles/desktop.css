@@ -14,14 +14,13 @@ body {
     overflow-x: hidden; /* Prevent horizontal scroll */
      font-size: 24px; /* Change this value to increase font size */
 }
-}
 
+/* Header */
 header {
-    background: #003300;
-    color: green;
+    background: #004d00;
+    color: #fff;
     padding: 10px 0;
     text-align: center;
-    position: relative; /* Ensure positioning context for child elements */
 }
 
 .header-container {
