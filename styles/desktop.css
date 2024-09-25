@@ -12,7 +12,7 @@ body {
     color: #333;
     background-color: skyblue;
     overflow-x: hidden; /* Prevent horizontal scroll */
-    font-size: 24px; /* Change this value to increase font size */
+    font-size: 24px; /* Adjust font size */
 }
 
 /* Header */
@@ -50,6 +50,7 @@ header {
     margin: 0 10px;
 }
 
+/* Navigation Menu */
 nav {
     background: #003300; /* Dark green */
 }
@@ -106,6 +107,7 @@ nav li:hover .dropdown-menu {
     display: block;
 }
 
+/* Main Content */
 main {
     padding: 15px;
 }
@@ -148,7 +150,27 @@ main {
     margin: 0 auto;
 }
 
-/* Styling for the body contact details */
+/* Mole Section */
+.mole-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.mole-image {
+    width: 150px; /* Adjust the size of the image */
+    height: auto;
+    margin-bottom: 10px; /* Space between the image and the text */
+}
+
+.mole-section p {
+    text-align: center; /* Ensure the text is also centered */
+    color: red;
+}
+
+/* Contact Details Styling */
 .contact-details a {
     color: red; /* Change body contact details from blue to red */
     text-decoration: none;
@@ -158,6 +180,7 @@ main {
     color: red; /* Ensure strong text in contact details is red */
 }
 
+/* Footer */
 footer {
     background: #003300; /* Dark green */
     color: #fff;
@@ -237,9 +260,4 @@ video {
     right: 100px; /* Adjust as needed */
     top: 50%;
     transform: translateY(-50%);
-}
-
-.mole-image {
-    width: 150px;
-    height: auto;
 }
