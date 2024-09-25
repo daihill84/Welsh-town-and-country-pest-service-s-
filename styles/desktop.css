@@ -160,9 +160,9 @@ main {
 }
 
 .mole-image {
-    width: 150px; /* Adjust the size of the image */
+    width: 300px; /* Adjust the size of the image */
     height: auto;
-    margin-bottom: 10px; /* Space between the image and the text */
+    margin-bottom: 1px; /* Space between the image and the text */
 }
 
 .mole-section p {
