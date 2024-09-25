@@ -12,12 +12,12 @@ body {
     color: #333;
     background-color: skyblue;
     overflow-x: hidden; /* Prevent horizontal scroll */
-     font-size: 24px; /* Change this value to increase font size */
+    font-size: 24px; /* Change this value to increase font size */
 }
 
 /* Header */
 header {
-    background: #004d00;
+    background: #004d00; /* Dark green */
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -50,7 +50,7 @@ header {
 }
 
 nav {
-    background: #003300;
+    background: #003300; /* Dark green */
 }
 
 nav ul.main-menu {
@@ -58,7 +58,7 @@ nav ul.main-menu {
     padding: 0;
     display: flex;
     justify-content: center;
-    background: #003300;
+    background: #003300; /* Dark green */
 }
 
 nav ul.main-menu li {
@@ -75,7 +75,7 @@ nav ul.main-menu li a {
 }
 
 nav ul.main-menu li a:hover {
-    background: #005700;
+    background: #005700; /* Lighter green on hover */
 }
 
 nav ul.dropdown-menu {
@@ -83,7 +83,7 @@ nav ul.dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #003300;
+    background: #003300; /* Dark green */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -98,7 +98,7 @@ nav ul.dropdown-menu li a {
 }
 
 nav ul.dropdown-menu li a:hover {
-    background: #005700;
+    background: #005700; /* Lighter green on hover */
 }
 
 nav li:hover .dropdown-menu {
@@ -158,7 +158,7 @@ main {
 }
 
 footer {
-    background: #003300;
+    background: #003300; /* Dark green */
     color: #fff;
     text-align: center;
     padding: 10px 0;
