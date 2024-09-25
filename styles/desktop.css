@@ -24,15 +24,10 @@ header {
 }
 
 .header-container {
-    background: #004d00; /* Dark green */
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative; /* Position context for WhatsApp images */
-}
-
-.logo-container {
-    margin-bottom: 10px;
 }
 
 .logo {
@@ -78,33 +73,6 @@ nav ul.main-menu li a {
 
 nav ul.main-menu li a:hover {
     background: #005700; /* Lighter green on hover */
-}
-
-nav ul.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #003300; /* Dark green */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 150px; /* Match width with main menu items */
-}
-
-nav ul.dropdown-menu li a {
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    color: #fff;
-}
-
-nav ul.dropdown-menu li a:hover {
-    background: #005700; /* Lighter green on hover */
-}
-
-nav li:hover .dropdown-menu {
-    display: block;
 }
 
 /* Main Content */
@@ -211,52 +179,8 @@ footer a:hover {
     height: auto;
 }
 
-/* Video Container Styles */
-.video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Video Styles */
-video {
-    width: 80%; /* Set the video width */
-    height: 80%; /* Set the video height */
-    object-fit: contain; /* Ensure video fits within the container while maintaining aspect ratio */
-    background: skyblue; /* Corrected background color */
-}
-
 /* Main Content Styles */
 #mainContent {
     position: relative;
     z-index: 2;
-    display: none;
-}
-
-/* Header Image Styles */
-.header-img img {
-    max-width: 120px; /* Same size as logo */
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-}
-
-.left-img {
-    position: absolute;
-    left: 100px; /* Adjust as needed */
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.right-img {
-    position: absolute;
-    right: 100px; /* Adjust as needed */
-    top: 50%;
-    transform: translateY(-50%);
 }
