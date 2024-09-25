@@ -24,6 +24,7 @@ header {
 }
 
 .header-container {
+    background: #004d00; /* Dark green */
     display: flex;
     flex-direction: column;
     align-items: center;
