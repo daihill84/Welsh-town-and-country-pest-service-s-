@@ -71,17 +71,18 @@
         }
         .video-container {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 50%;
+            left: 50%;
+            width: 25%; /* Adjust width to a quarter of the screen */
+            height: auto; /* Auto height to maintain aspect ratio */
+            transform: translate(-50%, -50%); /* Center the video */
             overflow: hidden;
             z-index: 10; /* Set a higher z-index for the video */
         }
         video {
             width: 100%;
-            height: 100%;
-            object-fit: cover; /* Cover the entire area */
+            height: auto; /* Auto height to maintain aspect ratio */
+            object-fit: cover; /* Cover the area */
             opacity: 1; /* Fully opaque */
         }
         #mainContent {
@@ -121,7 +122,7 @@
             </div>
             <nav>
                 <ul class="main-menu">
-                    <li><a href="brecon-pest-control.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li class="dropdown">
                         <a href="#">Domestic</a>
                         <ul class="dropdown-menu">
