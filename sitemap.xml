@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap-image/1.1 
-        http://www.sitemaps.org/schemas/sitemap-image/1.1/sitemap-image.xsd">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1">
     <url>
         <loc>https://www.welshtownandcountry.co.uk/index.html</loc>
         <lastmod>2024-09-25</lastmod>
-        <changefreq>weekly</changefreq>
+        <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
@@ -29,64 +25,75 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.welshtownandcountry.co.uk/domestic/rodents.html</loc>
-        <lastmod>2024-09-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.welshtownandcountry.co.uk/domestic/insects.html</loc>
-        <lastmod>2024-09-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.welshtownandcountry.co.uk/domestic/others.html</loc>
-        <lastmod>2024-09-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.welshtownandcountry.co.uk/commercial/rodents.html</loc>
-        <lastmod>2024-09-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.welshtownandcountry.co.uk/commercial/insects.html</loc>
-        <lastmod>2024-09-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.welshtownandcountry.co.uk/commercial/others.html</loc>
-        <lastmod>2024-09-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.welshtownandcountry.co.uk/agricultural/rodents.html</loc>
-        <lastmod>2024-09-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
         <loc>https://www.welshtownandcountry.co.uk/agricultural/mole-catcher.html</loc>
         <lastmod>2024-09-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
+        <loc>https://www.welshtownandcountry.co.uk/domestic/rodents.html</loc>
+        <lastmod>2024-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.welshtownandcountry.co.uk/domestic/insects.html</loc>
+        <lastmod>2024-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.welshtownandcountry.co.uk/domestic/others.html</loc>
+        <lastmod>2024-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.welshtownandcountry.co.uk/commercial/rodents.html</loc>
+        <lastmod>2024-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.welshtownandcountry.co.uk/commercial/insects.html</loc>
+        <lastmod>2024-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.welshtownandcountry.co.uk/commercial/others.html</loc>
+        <lastmod>2024-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.welshtownandcountry.co.uk/agricultural/rodents.html</loc>
+        <lastmod>2024-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
         <loc>https://www.welshtownandcountry.co.uk/agricultural/others.html</loc>
         <lastmod>2024-09-25</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://www.welshtownandcountry.co.uk/wasp-removal.html</loc>
         <lastmod>2024-09-25</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.5</priority>
     </url>
-
+    <url>
+        <loc>https://www.welshtownandcountry.co.uk/robots.txt</loc>
+        <lastmod>2024-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://www.welshtownandcountry.co.uk/sitemap.xml</loc>
+        <lastmod>2024-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
 </urlset>
