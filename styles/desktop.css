@@ -64,15 +64,37 @@ nav ul.main-menu li {
 
 nav ul.main-menu li a {
     color: #fff;
-    padding: 10px;
+    padding: 10px 15px; /* Add padding for better spacing */
     display: block;
     text-decoration: none;
-    width: 150px; /* Fixed width for each tab */
+    width: auto; /* Allow automatic width */
     text-align: center;
 }
 
 nav ul.main-menu li a:hover {
     background: #005700; /* Lighter green on hover */
+}
+
+/* Dropdown Menu */
+nav ul.main-menu li .dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position dropdown relative to parent */
+    background: #003300; /* Dark green */
+    list-style: none;
+    padding: 0;
+}
+
+nav ul.main-menu li:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+nav ul.main-menu li .dropdown-menu li {
+    width: 150px; /* Fixed width for dropdown items */
+}
+
+nav ul.main-menu li .dropdown-menu li a {
+    padding: 10px; /* Consistent padding for dropdown items */
+    text-align: left; /* Align text to the left */
 }
 
 /* Main Content */
