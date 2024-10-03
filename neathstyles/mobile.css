@@ -1,84 +1,134 @@
-/* mobile.css */
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    /* General body and container styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
 
-/* General Mobile Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    color: #333;
-}
+    /* Navigation menu */
+    nav {
+        background-color: #333;
+        overflow: hidden;
+        text-align: center;
+        padding: 10px 0;
+    }
 
-/* Header Mobile Styles */
-.header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
-}
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
 
-.logo-container {
-    margin-bottom: 10px;
-}
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 
-.company-name {
-    font-size: 28px;
-}
+    nav ul li a {
+        display: block;
+        padding: 15px;
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px solid #444;
+        text-align: center;
+    }
 
-.phone-number, #email {
-    font-size: 14px;
-}
+    nav ul li a:hover {
+        background-color: #555;
+    }
 
-/* Navigation Mobile Styles */
-.navigation ul {
-    padding: 0;
-}
+    /* Logo styling */
+    #logo {
+        width: 120px; /* Larger logo for better visibility */
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
 
-.navigation li {
-    display: block;
-    margin: 10px 0;
-}
+    /* Main content */
+    .content {
+        padding: 20px;
+        text-align: center;
+    }
 
-/* Hero Section Mobile Styles */
-.hero {
-    padding: 30px 15px;
-    font-size: 22px;
-}
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
 
-.hero h1 {
-    font-size: 24px;
-}
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        text-align: justify; /* Align text properly */
+    }
 
-.hero p {
-    font-size: 18px;
-}
+    /* Floating phone number */
+    .floating-phone {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #007BFF;
+        color: white;
+        padding: 15px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        z-index: 1000;
+        text-align: center;
+    }
 
-/* Image Layout for Mobile */
-.image-container {
-    flex-direction: column;
-    align-items: center;
-}
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto; /* Center images */
+    }
 
-.left-image, .right-image {
-    text-align: center;
-    margin-bottom: 20px;
-}
+    /* Footer */
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+    }
 
-/* Floating Call Button for Mobile */
-.floating-call-button {
-    bottom: 10px;
-    right: 10px;
-    padding: 15px 25px;
-    font-size: 18px;
-}
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
 
-/* Section Mobile Styles */
-section {
-    padding: 30px 15px;
-    font-size: 24px;
-}
+    footer a:hover {
+        text-decoration: underline;
+    }
 
-/* Footer Mobile Styles */
-.footer {
-    padding: 15px;
-    font-size: 14px;
+    /* Contact details at bottom */
+    .contact-info {
+        font-size: 1.2rem;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    /* Call to action button */
+    .cta-button {
+        display: inline-block;
+        background-color: #28a745;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        margin: 20px 0;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .cta-button:hover {
+        background-color: #218838;
+    }
 }
