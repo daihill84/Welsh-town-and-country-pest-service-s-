@@ -1,226 +1,107 @@
-/* Reset some default browser styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    /* General body and container styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
 
-/* Body and overall layout */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 20px; /* Base font size for mobile */
-    line-height: 1.6;
-    color: white;
-    background-color: darkblue;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-}
+    /* Navigation menu */
+    nav {
+        background-color: #333;
+        overflow: hidden;
+        padding: 10px 0;
+    }
 
-/* Header */
-header {
-    background: #004d00;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
 
-.header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    nav ul li {
+        display: inline-block;
+        width: 100%;
+    }
 
-.logo-container {
-    margin-bottom: 10px;
-}
+    nav ul li a {
+        display: block;
+        padding: 15px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        border-bottom: 1px solid #444;
+    }
 
-.logo {
-    max-width: 100px; /* Smaller logo for mobile */
-}
+    nav ul li a:hover {
+        background-color: #555;
+    }
 
-/* Contact info */
-.contact-info {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* Spacing between contact items */
-    margin-top: 10px;
-}
+    /* Logo styling */
+    #logo {
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
 
-.contact-info a {
-    color: red; /* Make contact info red */
-    font-size: 22px; 
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-}
+    /* Main content */
+    .content {
+        padding: 20px;
+        text-align: center;
+    }
 
-/* Navigation */
-nav {
-    background: #003300;
-}
+    h1 {
+        font-size: 1.8rem;
+    }
 
-nav ul.main-menu {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column; /* Stack menu items vertically for mobile */
-    align-items: center;
-}
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
 
-nav ul.main-menu li {
-    position: relative;
-}
+    /* Floating phone number */
+    .floating-phone {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        z-index: 1000;
+    }
 
-nav ul.main-menu li a {
-    color: #fff;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    width: 100%; /* Make menu items fit within the screen */
-}
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
-nav ul.main-menu li a:hover {
-    background: #005700;
-}
+    /* Footer */
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
 
-/* Dropdown Menu */
-nav ul.dropdown-menu {
-    display: none; /* Hide dropdown menu by default */
-    position: static; /* Change position for mobile */
-    background: #003300;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
 
-nav ul.dropdown-menu li a {
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    color: #fff;
-}
+    footer a:hover {
+        text-decoration: underline;
+    }
 
-nav ul.dropdown-menu li a:hover {
-    background: #005700;
+    /* Contact details at bottom */
+    .contact-info {
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
 }
-
-/* Dropdown menu display on mobile */
-nav li:hover .dropdown-menu {
-    display: block;
-}
-
-/* Main content */
-main {
-    padding: 10px;
-}
-
-/* Contact Form */
-.contact-form {
-    padding: 15px;
-}
-
-.contact-form h2 {
-    font-size: 22px; /* Adjust font size for mobile */
-}
-
-.contact-form p {
-    font-size: 16px; /* Adjust font size for mobile */
-}
-
-.contact-details h3 {
-    font-size: 18px; /* Adjust font size for mobile */
-    color: red; /* Keep contact heading red */
-}
-
-.contact-details p {
-    font-size: 16px; /* Adjust font size for mobile */
-    color: red; /* Change body contact details to red */
-}
-
-.contact-details a {
-    color: red; /* Make contact info links red */
-}
-
-.contact-details strong {
-    color: red; /* Ensure strong text in contact details is red */
-}
-
-form label {
-    display: block;
-    margin-top: 10px;
-}
-
-form input, form textarea, form button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-}
-
-form button {
-    background-color: #004d00;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-/* Service Boxes */
-.service-container {
-    display: flex;
-    flex-direction: column; /* Stack the service boxes vertically */
-    align-items: center; /* Center align them */
-}
-
-video {
-    width: 100vw; /* Viewport width */
-    height: 100vh; /* Viewport height */
-    object-fit: contain; /* Cover the entire screen while maintaining aspect ratio */
-    background: black;
-}
-
-.service-box {
-    background: skyblue;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    width: 100%; /* Full width for each box */
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center text in service boxes */
-}
-
-.service-img {
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-}
-
-/* Footer */
-footer {
-    background: #003300;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Wasp Image for Mobile - Ensure it fits neatly and maintains aspect ratio */
-.wasp-image {
-    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
-    height: auto; /* Maintain the aspect ratio */
-    display: block;
-    margin: 0 auto; /* Center the image horizontally */
-    object-fit: contain; /* Make sure the image scales without distortion */
-}
-
