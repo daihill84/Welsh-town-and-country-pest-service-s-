@@ -53,7 +53,7 @@ header {
 
 .hero-container {
     padding: 20px;
-    text-align: center;
+    text-align: left;
     background-color: #3498db; /* Bright blue background */
     color: white; /* White text */
     border-radius: 8px; /* Rounded corners */
