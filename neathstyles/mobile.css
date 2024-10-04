@@ -1,17 +1,18 @@
 /* General Mobile Styling */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Arial', sans-serif; /* Clean, sans-serif font */
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8; /* Light background */
-    color: #333; /* Dark text for readability */
+    background-color: #ffffff; /* White background for a clean look */
+    color: #444; /* Dark grey for better contrast */
 }
 
 header {
     text-align: center;
-    padding: 15px;
-    background-color: #2c3e50; /* Dark blue background */
-    color: #ecf0f1; /* Light text */
+    padding: 20px;
+    background-color: #3f51b5; /* Deep blue background */
+    color: #ffffff; /* White text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .logo-container {
@@ -22,7 +23,7 @@ header {
 }
 
 .logo {
-    width: 80px; /* Logo size */
+    width: 100px; /* Larger logo size */
 }
 
 .navigation ul {
@@ -30,60 +31,61 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
-    background-color: #34495e; /* Slightly lighter than header */
+    flex-direction: column; /* Stack navigation items */
+    background-color: #5c6bc0; /* Lighter blue for navigation */
 }
 
 .navigation ul li {
-    margin: 0 10px; /* Spacing between menu items */
+    margin: 0; /* No margin */
 }
 
 .navigation ul li a {
     text-decoration: none;
-    color: #ecf0f1; /* Light text for nav links */
-    padding: 12px; /* Increased padding for better touch target */
+    color: #ffffff; /* White text for nav links */
+    padding: 15px; /* Increased padding for better touch target */
     display: block;
-    font-size: 16px;
+    font-size: 18px; /* Slightly larger font size */
     transition: background 0.3s; /* Smooth transition */
+    border-bottom: 1px solid #ffffff; /* Divider between nav items */
 }
 
 .navigation ul li a:hover {
-    background-color: #2980b9; /* Hover color */
+    background-color: #3949ab; /* Darker blue on hover */
 }
 
 .hero-container {
-    padding: 20px;
-    text-align: left;
-    background-color: #3498db; /* Bright blue background */
+    padding: 30px;
+    text-align: center; /* Centered text for hero */
+    background-color: #ff9800; /* Bright orange background */
     color: white; /* White text */
     border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 .hero-content h1 {
-    font-size: 26px; /* Increased font size for heading */
-    margin-bottom: 12px; /* Increased margin for better spacing */
+    font-size: 28px; /* Larger font size for heading */
+    margin-bottom: 15px; /* Increased margin */
 }
 
 .hero-content p {
-    font-size: 18px; /* Increased font size for paragraph */
-    margin-bottom: 20px; /* Increased spacing below paragraph */
-    line-height: 1.5; /* Better line spacing */
+    font-size: 18px; /* Increased paragraph font size */
+    margin-bottom: 20px; /* Spacing below paragraph */
+    line-height: 1.6; /* Improved line height for readability */
 }
 
 .hero-content .btn {
     display: inline-block;
-    padding: 12px 24px; /* Increased padding for button */
-    background-color: #e74c3c; /* Red background */
+    padding: 15px 30px; /* Larger button padding */
+    background-color: #4caf50; /* Green background */
     color: white;
     text-decoration: none;
-    border-radius: 6px; /* Larger border radius */
+    border-radius: 6px; /* Slightly larger border radius */
     margin-top: 10px;
     transition: background 0.3s, transform 0.2s; /* Smooth transition with scaling effect */
 }
 
 .hero-content .btn:hover {
-    background-color: #c0392b; /* Darker red on hover */
+    background-color: #388e3c; /* Darker green on hover */
     transform: scale(1.05); /* Slight scaling effect on hover */
 }
 
@@ -96,14 +98,15 @@ header {
 }
 
 .left-image, .right-image {
-    width: 90%; /* Adjust width for images */
+    width: 95%; /* Adjust to fit within the container */
     margin: 10px 0; /* Vertical spacing between images */
 }
 
 .left-image img, .right-image img {
     width: 100%; /* Responsive images */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for images */
+    border-radius: 10px; /* Larger rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
 }
 
 .welcome, .services, .advert, .areas, .contact {
@@ -112,8 +115,8 @@ header {
 }
 
 .welcome h2, .services h2, .advert h2, .areas h2, .contact h2 {
-    font-size: 22px; /* Consistent heading size */
-    margin-bottom: 10px;
+    font-size: 24px; /* Larger font size for section headings */
+    margin-bottom: 15px; /* Increased margin for spacing */
 }
 
 .services ul {
@@ -123,10 +126,11 @@ header {
 }
 
 .services ul li {
-    padding: 15px;
-    background-color: #e3e3e3; /* Light grey for service items */
+    padding: 20px;
+    background-color: #e3f2fd; /* Light blue for service items */
     margin-bottom: 10px;
-    border-radius: 4px; /* Rounded corners */
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .call-to-action {
@@ -134,13 +138,13 @@ header {
 }
 
 .call-to-action h3 {
-    font-size: 18px; /* Size for call-to-action heading */
+    font-size: 20px; /* Size for call-to-action heading */
     margin-bottom: 10px;
 }
 
 .call-to-action .btn {
-    background-color: #27ae60; /* Green background */
-    padding: 12px 24px; /* Increased padding for button */
+    background-color: #2196f3; /* Blue background */
+    padding: 15px 30px; /* Larger button padding */
     color: white;
     text-decoration: none;
     border-radius: 6px; /* Larger border radius */
@@ -148,13 +152,13 @@ header {
 }
 
 .call-to-action .btn:hover {
-    background-color: #219150; /* Darker green on hover */
+    background-color: #1976d2; /* Darker blue on hover */
 }
 
 .footer {
-    background-color: #2c3e50; /* Dark footer */
+    background-color: #3f51b5; /* Dark footer */
     color: white;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     font-size: 14px;
 }
@@ -162,7 +166,7 @@ header {
 /* Responsive Styles for Smaller Screens */
 @media (max-width: 768px) {
     .hero-content h1 {
-        font-size: 22px; /* Adjusted heading size for smaller screens */
+        font-size: 24px; /* Adjusted heading size for smaller screens */
     }
 
     .hero-content p,
@@ -177,11 +181,11 @@ header {
 
     .left-image, .right-image {
         width: 100%; /* Full width on small screens */
-        margin-bottom: 10px; /* Spacing between images */
+        margin-bottom: 15px; /* Spacing between images */
     }
 
     .call-to-action h3 {
-        font-size: 16px; /* Adjust call-to-action heading */
+        font-size: 18px; /* Adjust call-to-action heading */
     }
 
     .navigation ul {
