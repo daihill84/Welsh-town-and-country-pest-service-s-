@@ -60,14 +60,28 @@ body {
 .left-image, .right-image {
     text-align: center;
     margin-bottom: 20px;
-    width: 100%; /* Make images responsive */
+    width: 90%; /* Make images smaller */
 }
 
 .left-image img, .right-image img {
-    max-width: 100%;
-    height: auto; /* Ensure the image retains its aspect ratio */
+    max-width: 90%; /* Reduce image width */
+    height: auto;
     display: block;
-    margin: 0 auto; /* Center the image */
+    margin: 0 auto;
+}
+
+/* Video Layout for Mobile */
+.video-container {
+    width: 100%; /* Ensure the video takes up full width */
+    margin-bottom: 20px;
+}
+
+.video-container video {
+    width: 90%; /* Make video smaller */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Floating Call Button for Mobile */
@@ -99,6 +113,15 @@ section {
 
 /* Ensure Images Fit Well for Mobile */
 img {
+    max-width: 90%; /* Make images smaller */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Ensure Videos Fit Well for Mobile */
+video {
+    width: 90%; /* Make videos smaller */
     max-width: 100%;
     height: auto;
     display: block;
