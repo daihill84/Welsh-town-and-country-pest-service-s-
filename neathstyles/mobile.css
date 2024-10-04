@@ -156,7 +156,7 @@ footer {
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
-    max-width: 50%;
+    max-width: 100%;
     background-color: #000;
 }
 
@@ -164,7 +164,27 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
+.advert {
+    text-align: center;
+}
+
+.advert h2, .advert p {
+    margin: 10px 0;
+}
+
+.call-to-action {
+    margin-top: 20px;
+}
+
+.call-to-action .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
