@@ -216,4 +216,16 @@ footer {
     .call-to-action h3 {
         font-size: 16px; /* Adjust call-to-action heading */
     }
+
+    .call-to-action .btn {
+        width: 100%; /* Full width for buttons on mobile */
+    }
+
+    .hero-container {
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .services ul li {
+        font-size: 14px; /* Adjust service list item font size */
+    }
 }
