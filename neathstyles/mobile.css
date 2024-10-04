@@ -22,7 +22,7 @@ header {
 }
 
 .logo {
-    width: 80px;
+    width: 80px; /* Logo size */
 }
 
 .navigation ul {
@@ -35,13 +35,13 @@ header {
 }
 
 .navigation ul li {
-    margin: 0 10px;
+    margin: 0 10px; /* Spacing between menu items */
 }
 
 .navigation ul li a {
     text-decoration: none;
     color: #ecf0f1; /* Light text for nav links */
-    padding: 10px;
+    padding: 12px; /* Increased padding for better touch target */
     display: block;
     font-size: 16px;
     transition: background 0.3s; /* Smooth transition */
@@ -61,28 +61,30 @@ header {
 }
 
 .hero-content h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 26px; /* Increased font size for heading */
+    margin-bottom: 12px; /* Increased margin for better spacing */
 }
 
 .hero-content p {
-    font-size: 16px;
-    margin-bottom: 15px; /* Spacing below paragraph */
+    font-size: 18px; /* Increased font size for paragraph */
+    margin-bottom: 20px; /* Increased spacing below paragraph */
+    line-height: 1.5; /* Better line spacing */
 }
 
 .hero-content .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px; /* Increased padding for button */
     background-color: #e74c3c; /* Red background */
     color: white;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 6px; /* Larger border radius */
     margin-top: 10px;
-    transition: background 0.3s; /* Smooth transition */
+    transition: background 0.3s, transform 0.2s; /* Smooth transition with scaling effect */
 }
 
 .hero-content .btn:hover {
     background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
 }
 
 .image-container {
@@ -90,17 +92,17 @@ header {
     flex-direction: column; /* Arrange images vertically */
     justify-content: center;
     align-items: center; /* Center images horizontally */
-    margin-top: 15px;
+    margin-top: 20px; /* Spacing above images */
 }
 
 .left-image, .right-image {
-    width: 90%; /* Adjust to fit within the container */
+    width: 90%; /* Adjust width for images */
     margin: 10px 0; /* Vertical spacing between images */
 }
 
 .left-image img, .right-image img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Rounded corners for images */
 }
 
@@ -110,7 +112,7 @@ header {
 }
 
 .welcome h2, .services h2, .advert h2, .areas h2, .contact h2 {
-    font-size: 22px;
+    font-size: 22px; /* Consistent heading size */
     margin-bottom: 10px;
 }
 
@@ -132,16 +134,16 @@ header {
 }
 
 .call-to-action h3 {
-    font-size: 18px;
+    font-size: 18px; /* Size for call-to-action heading */
     margin-bottom: 10px;
 }
 
 .call-to-action .btn {
     background-color: #27ae60; /* Green background */
-    padding: 10px 15px;
+    padding: 12px 24px; /* Increased padding for button */
     color: white;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 6px; /* Larger border radius */
     transition: background 0.3s; /* Smooth transition */
 }
 
@@ -160,12 +162,12 @@ header {
 /* Responsive Styles for Smaller Screens */
 @media (max-width: 768px) {
     .hero-content h1 {
-        font-size: 20px; /* Slightly smaller heading */
+        font-size: 22px; /* Adjusted heading size for smaller screens */
     }
 
     .hero-content p,
     .hero-content .btn {
-        font-size: 14px; /* Adjust text and button size */
+        font-size: 16px; /* Adjust text and button size */
     }
 
     .image-container {
@@ -180,5 +182,13 @@ header {
 
     .call-to-action h3 {
         font-size: 16px; /* Adjust call-to-action heading */
+    }
+
+    .navigation ul {
+        flex-direction: column; /* Stack navigation items vertically on smaller screens */
+    }
+
+    .navigation ul li {
+        margin-bottom: 5px; /* Spacing between nav items */
     }
 }
