@@ -77,6 +77,7 @@ header {
 
 .image-container {
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
     justify-content: space-between;
     margin-top: 15px;
 }
@@ -96,7 +97,7 @@ header {
 }
 
 .welcome h2, .services h2, .advert h2, .areas h2, .contact h2 {
-    font-size:22px;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
@@ -151,6 +152,7 @@ footer {
     font-size: 22px;
 }
 
+/* Video Container */
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
@@ -176,6 +178,7 @@ footer {
     margin: 10px 0;
 }
 
+/* Call to Action */
 .call-to-action {
     margin-top: 20px;
 }
@@ -187,4 +190,30 @@ footer {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 20px; /* Slightly smaller heading */
+    }
+
+    .hero-content p,
+    .hero-content .btn {
+        font-size: 14px; /* Adjust text and button size */
+    }
+
+    .image-container {
+        flex-direction: column; /* Stack images on small screens */
+        align-items: center;
+    }
+
+    .left-image, .right-image {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 10px; /* Spacing between images */
+    }
+
+    .call-to-action h3 {
+        font-size: 16px; /* Adjust call-to-action heading */
+    }
 }
