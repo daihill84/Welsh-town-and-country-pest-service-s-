@@ -1,139 +1,152 @@
-/* General Mobile Styles */
+/* General Mobile Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #f9f9f9;
     color: #333;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Header Mobile Styles */
-.header {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
+header {
     text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
 }
 
 .logo-container {
-    margin-bottom: 10px;
-    width: 100%;
-    text-align: center;
-}
-
-.company-name {
-    font-size: 22px; /* Reduce font size for better fit */
-    text-align: center;
-}
-
-.phone-number, #email {
-    font-size: 14px;
-    text-align: center;
-}
-
-/* Navigation Mobile Styles */
-.navigation ul {
-    padding: 0;
-    list-style-type: none;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.navigation li {
-    display: inline;
-    margin: 5px 10px;
-    font-size: 16px;
+.logo {
+    width: 80px;
 }
 
-/* Hero Section Mobile Styles */
-.hero {
-    padding: 15px;
-    font-size: 20px;
-    text-align: center;
-    background-color: #ffc107;
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
 }
 
-.hero h1 {
-    font-size: 22px;
+.navigation ul li {
+    margin: 0 10px;
 }
 
-.hero p {
-    font-size: 16px;
-}
-
-/* Button Styling */
-.hero button {
-    margin: 20px auto;
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
     display: block;
+    font-size: 16px;
 }
 
-/* Image Layout for Mobile */
+.hero-container {
+    padding: 15px;
+    text-align: center;
+    background-color: #e3e3e3;
+}
+
+.hero-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 16px;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.hero-content .btn:hover {
+    background-color: #ff1a1a;
+}
+
 .image-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 10px 0;
+    justify-content: space-between;
+    margin-top: 15px;
 }
 
 .left-image, .right-image {
-    text-align: center;
-    margin-bottom: 20px;
-    width: 90%; /* Adjust width */
+    width: 48%;
 }
 
 .left-image img, .right-image img {
-    width: 100%; /* Make images responsive */
-    max-width: 300px; /* Limit max width */
+    width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
-/* Floating Call Button for Mobile */
-.floating-call-button {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    padding: 10px 20px;
-    background-color: #ff4040;
-    color: white;
-    font-size: 16px;
-    border-radius: 50px;
+.welcome, .services, .advert, .areas, .contact {
+    padding: 20px;
     text-align: center;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-/* Section Mobile Styles */
-section {
+.welcome h2, .services h2, .advert h2, .areas h2, .contact h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services ul li {
     padding: 15px;
+    background-color: #eaeaea;
+    margin-bottom: 10px;
+}
+
+.call-to-action {
+    margin-top: 20px;
+}
+
+.call-to-action h3 {
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
-/* Footer Mobile Styles */
-.footer {
-    padding: 15px;
-    font-size: 14px;
+.call-to-action .btn {
+    background-color: #ff4d4d;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.rodent-image {
     text-align: center;
+    margin-top: 20px;
 }
 
-/* Ensure Images Fit Well for Mobile */
-img {
-    max-width: 100%; /* Ensure images scale properly */
+.rodent-image img {
+    width: 80%;
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
-/* Ensure Videos Fit Well for Mobile */
-video {
-    width: 90%; /* Adjust video to fit */
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.floating-call-button {
+    font-size: 22px;
 }
