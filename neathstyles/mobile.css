@@ -1,18 +1,17 @@
 /* General Mobile Styling */
 body {
-    font-family: 'Arial', sans-serif; /* Clean, sans-serif font */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* White background for a clean look */
-    color: #444; /* Dark grey for better contrast */
+    background-color: #f0f4f8; /* Light background */
+    color: #333; /* Dark text for readability */
 }
 
 header {
     text-align: center;
-    padding: 20px;
-    background-color: #3f51b5; /* Deep blue background */
-    color: #ffffff; /* White text */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 15px;
+    background-color: #2c3e50; /* Dark blue background */
+    color: #ecf0f1; /* Light text */
 }
 
 .logo-container {
@@ -23,7 +22,7 @@ header {
 }
 
 .logo {
-    width: 100px; /* Larger logo size */
+    width: 80px;
 }
 
 .navigation ul {
@@ -31,92 +30,81 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Stack navigation items */
-    background-color: #5c6bc0; /* Lighter blue for navigation */
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center links */
+    background-color: #34495e; /* Slightly lighter than header */
 }
 
 .navigation ul li {
-    margin: 0; /* No margin */
+    margin: 5px 0; /* Spacing between links */
 }
 
 .navigation ul li a {
     text-decoration: none;
-    color: #ffffff; /* White text for nav links */
-    padding: 15px; /* Increased padding for better touch target */
+    color: #ecf0f1; /* Light text for nav links */
+    padding: 10px;
     display: block;
-    font-size: 18px; /* Slightly larger font size */
+    font-size: 16px;
+    width: 100%; /* Full width for touch targets */
+    text-align: center; /* Center text */
     transition: background 0.3s; /* Smooth transition */
-    border-bottom: 1px solid #ffffff; /* Divider between nav items */
 }
 
 .navigation ul li a:hover {
-    background-color: #3949ab; /* Darker blue on hover */
+    background-color: #2980b9; /* Hover color */
 }
 
-.hero-container {
-    padding: 20px; /* Ensure there's some padding */
-    text-align: center; /* Center text for better mobile appearance */
+.hero {
+    padding: 15px;
+    background-color: #3498db; /* Bright blue background */
+    color: white; /* White text */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center align text */
 }
 
-.hero-content {
-    margin-bottom: 20px; /* Space between content and images */
+.hero-content h1 {
+    font-size: 22px; /* Responsive heading */
+    margin-bottom: 8px;
+}
+
+.hero-content p {
+    font-size: 14px; /* Adjust paragraph size */
+    margin-bottom: 10px; /* Spacing below paragraph */
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #e74c3c; /* Red background */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background 0.3s; /* Smooth transition */
+}
+
+.hero-content .btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
 }
 
 .image-container {
     display: flex;
     flex-direction: column; /* Stack images vertically */
     align-items: center; /* Center images horizontally */
-    margin-top: 15px; /* Space between content and images */
+    margin-top: 15px; /* Spacing above images */
 }
 
 .left-image, .right-image {
-    width: 100%; /* Full width for better mobile visibility */
-    max-width: 500px; /* Set a max width for larger screens */
+    width: 90%; /* Adjust to fit within the container */
     margin: 10px 0; /* Vertical spacing between images */
 }
 
 .left-image img, .right-image img {
     width: 100%; /* Responsive images */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Larger rounded corners for images */
+    border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
-}
-
-/* Adjustments for very small screens */
-@media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 20px; /* Smaller font size for the heading */
-    }
-
-    .hero-content p,
-    .hero-content .btn {
-        font-size: 14px; /* Adjust text and button size */
-    }
-}
-
-
-.welcome, .services, .advert, .areas, .contact {
-    padding: 20px;
-    text-align: center;
-}
-
-.welcome h2, .services h2, .advert h2, .areas h2, .contact h2 {
-    font-size: 24px; /* Larger font size for section headings */
-    margin-bottom: 15px; /* Increased margin for spacing */
-}
-
-.services ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.services ul li {
-    padding: 20px;
-    background-color: #e3f2fd; /* Light blue for service items */
-    margin-bottom: 10px;
-    border-radius: 6px; /* Rounded corners */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .call-to-action {
@@ -124,40 +112,40 @@ header {
 }
 
 .call-to-action h3 {
-    font-size: 20px; /* Size for call-to-action heading */
+    font-size: 16px; /* Adjust call-to-action heading */
     margin-bottom: 10px;
 }
 
 .call-to-action .btn {
-    background-color: #2196f3; /* Blue background */
-    padding: 15px 30px; /* Larger button padding */
+    background-color: #27ae60; /* Green background */
+    padding: 10px 15px;
     color: white;
     text-decoration: none;
-    border-radius: 6px; /* Larger border radius */
+    border-radius: 4px;
     transition: background 0.3s; /* Smooth transition */
 }
 
 .call-to-action .btn:hover {
-    background-color: #1976d2; /* Darker blue on hover */
+    background-color: #219150; /* Darker green on hover */
 }
 
 .footer {
-    background-color: #3f51b5; /* Dark footer */
+    background-color: #2c3e50; /* Dark footer */
     color: white;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     font-size: 14px;
 }
 
 /* Responsive Styles for Smaller Screens */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .hero-content h1 {
-        font-size: 24px; /* Adjusted heading size for smaller screens */
+        font-size: 20px; /* Smaller heading */
     }
 
     .hero-content p,
     .hero-content .btn {
-        font-size: 16px; /* Adjust text and button size */
+        font-size: 12px; /* Adjust text and button size */
     }
 
     .image-container {
@@ -167,18 +155,10 @@ header {
 
     .left-image, .right-image {
         width: 100%; /* Full width on small screens */
-        margin-bottom: 15px; /* Spacing between images */
+        margin-bottom: 10px; /* Spacing between images */
     }
 
     .call-to-action h3 {
-        font-size: 18px; /* Adjust call-to-action heading */
-    }
-
-    .navigation ul {
-        flex-direction: column; /* Stack navigation items vertically on smaller screens */
-    }
-
-    .navigation ul li {
-        margin-bottom: 5px; /* Spacing between nav items */
+        font-size: 14px; /* Adjust call-to-action heading */
     }
 }
