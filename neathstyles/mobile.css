@@ -1,174 +1,116 @@
-/* General Mobile Styling */
+/* Mobile Styles */
 body {
-    font-family: 'Arial', sans-serif; /* Simple and clean font */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* White background for clarity */
-    color: #333; /* Dark text for readability */
-    line-height: 1.5; /* Better text spacing */
 }
 
-header {
-    background-color: #2c3e50; /* Dark background */
-    color: #ecf0f1; /* Light text */
-    text-align: center; /* Center header text */
-    padding: 15px; /* Padding around header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
 }
 
 .logo-container {
-    margin-bottom: 10px; /* Spacing below logo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo {
-    width: 80px; /* Adjust logo size */
+    width: 80%; /* Responsive logo */
 }
 
-/* Navigation Styles */
+.company-name {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.phone-number {
+    font-size: 1.2em;
+}
+
 .navigation {
-    background-color: #34495e; /* Lighter shade for navigation */
+    display: flex;
+    justify-content: center;
+    background-color: #007bff;
 }
 
 .navigation ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Flexbox for horizontal layout */
-    flex-direction: column; /* Stack links vertically */
-    align-items: center; /* Center links */
+    list-style-type: none;
+    padding: 0;
 }
 
-.navigation ul li {
-    margin: 5px 0; /* Vertical spacing between links */
+.navigation li {
+    margin: 0 10px;
 }
 
-.navigation ul li a {
-    text-decoration: none; /* Remove underline */
-    color: #ecf0f1; /* Light text for links */
-    padding: 12px 20px; /* Padding for links */
-    display: block; /* Block display for clickable area */
-    width: 100%; /* Full width for touch targets */
-    text-align: center; /* Center text */
-    transition: background 0.3s; /* Smooth hover effect */
+.navigation a {
+    color: white;
+    text-decoration: none;
 }
 
-.navigation ul li a:hover {
-    background-color: #2980b9; /* Hover background color */
-}
-
-/* Hero Section Styles */
 .hero {
-    padding: 20px; /* Padding inside hero */
-    background-color: #3498db; /* Bright blue background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    text-align: center; /* Center align content */
-    margin: 15px; /* Margin around hero section */
+    text-align: center;
+    padding: 20px;
 }
 
 .hero-content h1 {
-    font-size: 24px; /* Responsive heading */
-    margin-bottom: 10px; /* Space below heading */
+    font-size: 1.8em;
 }
 
-.hero-content p {
-    font-size: 14px; /* Adjust paragraph size */
-    margin-bottom: 15px; /* Space below paragraph */
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 0;
 }
 
-.hero-content .btn {
-    background-color: #e74c3c; /* Button background color */
-    color: white; /* Button text color */
-    padding: 12px 20px; /* Button padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded button */
-    text-decoration: none; /* No underline */
-    transition: background 0.3s; /* Smooth transition */
-    display: inline-block; /* Allow margins */
-    margin: 5px; /* Margin around button */
-}
-
-.hero-content .btn:hover {
-    background-color: #c0392b; /* Darker red on hover */
-}
-
-/* Image Container Styles */
 .image-container {
-    display: flex; /* Use flexbox for image layout */
-    flex-direction: column; /* Stack images vertically */
-    align-items: center; /* Center images */
-    margin-top: 15px; /* Spacing above images */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .left-image,
 .right-image {
-    width: 90%; /* Adjust width to fit container */
-    margin: 10px 0; /* Vertical spacing between images */
+    width: 45%; /* Responsive image size */
+    margin: 10px;
 }
 
-.left-image img,
-.right-image img {
-    width: 100%; /* Responsive images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+.welcome,
+.services,
+.areas,
+.contact {
+    padding: 20px;
+    text-align: center;
 }
 
-/* Call to Action Styles */
 .call-to-action {
-    margin-top: 20px; /* Spacing above call-to-action */
-    text-align: center; /* Center align text */
+    margin: 20px 0;
 }
 
-.call-to-action h3 {
-    font-size: 16px; /* Adjust heading size */
-    margin-bottom: 10px; /* Space below heading */
-}
-
-.call-to-action .btn {
-    background-color: #27ae60; /* Green button */
-    padding: 10px 15px; /* Button padding */
-    color: white; /* Button text color */
-    border: none; /* No border */
-    border-radius: 4px; /* Rounded corners */
-    text-decoration: none; /* No underline */
-    transition: background 0.3s; /* Smooth transition */
-}
-
-.call-to-action .btn:hover {
-    background-color: #219150; /* Darker green on hover */
-}
-
-/* Footer Styles */
-.footer {
-    background-color: #2c3e50; /* Dark footer background */
-    color: white; /* Light footer text */
-    padding: 10px; /* Padding in footer */
-    text-align: center; /* Center footer text */
-    font-size: 14px; /* Footer font size */
-}
-
-/* Responsive Styles */
-@media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 22px; /* Smaller heading for small screens */
-    }
-
-    .hero-content p {
-        font-size: 12px; /* Smaller paragraph text */
-    }
-
-    .hero-content .btn,
-    .call-to-action .btn {
-        font-size: 12px; /* Smaller button text */
-        padding: 10px; /* Adjust button padding */
-    }
-
-    .left-image,
-    .right-image {
-        width: 100%; /* Full width for images on small screens */
-    }
-
-    .call-to-action h3 {
-        font-size: 14px; /* Adjust call-to-action heading */
-    }
+.floating-call-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
