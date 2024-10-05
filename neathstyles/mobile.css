@@ -55,7 +55,7 @@ header {
 
 .hero-container {
     padding: 15px; /* Adjusted padding for better fit */
-    text-align: center; /* Center text alignment */
+    text-align: left; /* Center text alignment */
     background-color: #ff9800; /* Bright orange background */
     color: white; /* White text */
     border-radius: 8px; /* Rounded corners */
