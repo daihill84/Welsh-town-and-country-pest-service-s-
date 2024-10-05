@@ -60,35 +60,39 @@ body {
 }
 
 .hero {
-    text-align: center;
+    background-color: #ffcc00; /* Yellow background color */
     padding: 20px;
+    text-align: center;
 }
 
-.hero-content h1 {
-    font-size: 1.8em;
+.hero-container {
+    max-width: 800px; /* Set a maximum width for better readability */
+    margin: auto; /* Center the content */
 }
 
-.btn {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
+.hero h1 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 1.2em;
     margin: 10px 0;
 }
 
 .image-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .left-image,
 .right-image {
-    width: 20%; /* Responsive image size */
+    width: 40%; /* Responsive image size */
     margin: 10px;
 }
+
 
 .welcome,
 .services,
