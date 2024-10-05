@@ -1,182 +1,165 @@
-/* Modern Mobile Stylesheet */
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box; /* Box model */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern font choice */
-    margin: 0;
-    padding: 0;
-    line-height: 1.5; /* Improved line spacing */
-    background-color: #f8f8f8; /* Light background for contrast */
+    font-family: 'Arial', sans-serif; /* Modern font choice */
+    background-color: #f5f5f5; /* Light background */
+    color: #333; /* Dark text color for contrast */
+    line-height: 1.6; /* Increased line height for readability */
 }
 
 /* Header Styles */
 .header {
-    background-color: #ffcc00; /* Yellow background color */
-    padding: 15px 10px; /* Adequate padding for touch targets */
+    background-color: #ffcc00; /* Yellow header */
+    padding: 15px; /* Padding for header */
     text-align: center; /* Center text */
 }
 
 .logo {
-    width: 80%; /* Responsive logo width */
-    max-width: 120px; /* Maximum logo width */
+    max-width: 100px; /* Responsive logo width */
+    width: 80%; /* Logo scaling */
 }
 
 .company-name {
-    font-size: 1.4em; /* Increased font size for visibility */
-    font-weight: bold; /* Bold text for emphasis */
-}
-
-/* Contact Information */
-.contact-info {
-    margin-top: 10px; /* Margin for contact info */
-}
-
-.phone-number,
-a {
-    color: #333; /* Text color */
-    text-decoration: none; /* Remove underline */
-    display: block; /* Block elements for easy tapping */
-    margin: 5px 0; /* Margin for spacing */
-    font-size: 0.9em; /* Smaller font size for contact info */
+    font-size: 1.5em; /* Increased font size */
+    font-weight: bold; /* Bold for emphasis */
+    margin-top: 10px; /* Space above the company name */
 }
 
 /* Navigation Styles */
 .navigation {
-    background-color: #ffcc00; /* Yellow background for navigation */
+    background-color: #ffcc00; /* Yellow background for nav */
     padding: 10px 0; /* Padding for navigation */
 }
 
 .navigation ul {
     list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
+    padding: 0; /* No padding */
 }
 
 .navigation li {
-    margin: 5px 0; /* Margin for list items */
+    margin: 10px 0; /* Margin for each item */
 }
 
 .navigation a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark text color */
+    padding: 10px 15px; /* Padding for clickable area */
+    display: block; /* Full-width clickable area */
     text-align: center; /* Center align links */
-    padding: 10px; /* Padding for clickable area */
-    font-size: 1em; /* Font size for links */
 }
 
 /* Hero Section */
 .hero {
-    background-color: #ffcc00; /* Yellow background color */
-    padding: 20px 10px; /* Adequate padding */
+    background-color: #ffcc00; /* Yellow background */
+    padding: 20px; /* Padding for hero section */
     text-align: center; /* Center text */
 }
 
 .hero h1 {
-    font-size: 2em; /* Large heading size */
-    margin: 10px 0; /* Margin for heading */
-    color: #333; /* Dark text for contrast */
+    font-size: 2em; /* Large heading */
+    margin: 10px 0; /* Margin around heading */
+    color: #333; /* Dark color for contrast */
 }
 
 .hero p {
     font-size: 1em; /* Font size for paragraph */
-    margin: 10px 0; /* Margin for paragraph */
+    margin: 10px 0; /* Margin around paragraph */
 }
 
 /* Button Styles */
 .btn {
     background-color: #333; /* Dark background for buttons */
     color: #fff; /* White text for buttons */
-    padding: 12px 15px; /* Padding for buttons */
+    padding: 10px 15px; /* Padding for buttons */
     text-decoration: none; /* Remove underline */
     border-radius: 5px; /* Rounded corners */
-    display: inline-block; /* Make buttons inline-block */
+    display: inline-block; /* Inline block for buttons */
     margin: 10px 0; /* Margin for buttons */
 }
 
-/* Image Container */
+/* Image Styles */
 .image-container {
-    display: flex; /* Flexbox for image layout */
-    justify-content: center; /* Center images */
-    flex-wrap: wrap; /* Wrap images on smaller screens */
-    margin-top: 20px; /* Margin for top of image container */
+    display: flex; /* Flexbox for images */
+    justify-content: space-between; /* Space between images */
+    flex-wrap: wrap; /* Wrap on small screens */
+    margin-top: 20px; /* Margin for image container */
 }
 
-.left-image,
-.right-image {
-    width: 45%; /* Responsive image size */
-    margin: 2.5%; /* Margin for images */
-    max-width: 200px; /* Limit maximum image width */
+.image {
+    width: 48%; /* Responsive image width */
+    margin: 1%; /* Margin around images */
+    max-width: 200px; /* Maximum image width */
 }
 
 /* Section Styles */
-.welcome,
-.services,
-.areas,
-.contact {
-    padding: 15px; /* Padding for sections */
+section {
     background-color: #fff; /* White background for sections */
+    padding: 15px; /* Padding for sections */
     margin: 10px 5%; /* Margin for sections */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Section Headings */
-.welcome h2,
-.services h2,
-.areas h2,
-.contact h2 {
-    font-size: 1.5em; /* Heading size for sections */
-    color: #333; /* Heading text color */
-    margin-bottom: 10px; /* Margin below section headings */
+section h2 {
+    font-size: 1.5em; /* Section heading size */
+    color: #333; /* Section heading color */
+    margin-bottom: 10px; /* Margin below heading */
 }
 
-/* Call-to-Action Section */
+/* Call to Action Section */
 .call-to-action {
-    text-align: center; /* Center call-to-action elements */
+    text-align: center; /* Center content */
     margin: 20px 0; /* Margin for call-to-action */
 }
 
 .call-to-action h3 {
-    font-size: 1.2em; /* Heading size for call-to-action */
-    color: #333; /* Heading text color */
-    margin-bottom: 10px; /* Margin below call-to-action heading */
+    font-size: 1.3em; /* Heading size */
+    color: #333; /* Heading color */
+    margin-bottom: 10px; /* Margin below heading */
 }
 
 /* Footer Styles */
 .footer {
     text-align: center; /* Center footer text */
     padding: 15px; /* Padding for footer */
-    background-color: #333; /* Dark background for footer */
-    color: #fff; /* Footer text color */
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
 }
 
 /* Floating Call Button */
 .floating-call-button {
-    position: fixed; /* Fixed positioning for floating button */
+    position: fixed; /* Fixed positioning */
     bottom: 20px; /* Distance from bottom */
     right: 20px; /* Distance from right */
-    background-color: #ffcc00; /* Floating button background color */
-    color: #333; /* Floating button text color */
+    background-color: #ffcc00; /* Yellow button background */
+    color: #333; /* Dark text color */
     padding: 15px; /* Padding for button */
-    border-radius: 50%; /* Circular button */
+    border-radius: 50%; /* Circular shape */
     text-align: center; /* Center text */
-    font-size: 1.5em; /* Font size */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for button */
-    z-index: 1000; /* Ensure button is on top */
+    font-size: 1.5em; /* Font size for button */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    z-index: 1000; /* Ensure on top */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 600px) {
     .hero h1 {
-        font-size: 1.5em; /* Smaller font size for smaller screens */
-    }
-
-    .hero p {
-        font-size: 0.9em; /* Smaller paragraph font size */
+        font-size: 1.8em; /* Smaller heading size for mobile */
     }
 
     .btn {
         width: 100%; /* Full-width buttons */
+        font-size: 1em; /* Font size for buttons */
     }
 
-    .left-image,
-    .right-image {
-        width: 100%; /* Full-width images */
+    .image {
+        width: 100%; /* Full-width images on mobile */
         margin: 5px 0; /* Margin for images */
     }
 }
