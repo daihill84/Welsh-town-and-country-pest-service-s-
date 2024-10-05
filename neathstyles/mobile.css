@@ -54,53 +54,15 @@ header {
 }
 
 .hero-container {
-    padding: 15px; /* Adjusted padding for better fit */
-    text-align: left; /* Center text alignment */
-    background-color: #ff9800; /* Bright orange background */
-    color: white; /* White text */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 20px; /* Ensure there's some padding */
+    text-align: center; /* Center text for better mobile appearance */
 }
 
-.hero-content h1 {
-    font-size: 26px; /* Adjusted font size for better fit */
-    margin-bottom: 10px; /* Reduced margin for spacing */
+.hero-content {
+    margin-bottom: 20px; /* Space between content and images */
 }
 
-.hero-content p {
-    font-size: 16px; /* Slightly smaller paragraph font size */
-    margin-bottom: 15px; /* Reduced bottom margin */
-    line-height: 1.5; /* Improved line height for readability */
-}
-
-.hero-content .btn {
-    display: inline-block;
-    padding: 12px 25px; /* Adjusted button padding */
-    background-color: #4caf50; /* Green background */
-    color: white;
-    text-decoration: none;
-    border-radius: 6px; /* Rounded corners */
-    margin-top: 10px;
-    transition: background 0.3s, transform 0.2s; /* Smooth transition with scaling effect */
-}
-
-.hero-content .btn:hover {
-    background-color: #388e3c; /* Darker green on hover */
-    transform: scale(1.05); /* Slight scaling effect on hover */
-}
-
-/* Adjusting images in the hero section */
-.hero-image {
-    width: 100%; /* Full width for images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners */
-    margin-top: 10px; /* Space above images */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
-}
-
-}
-
-..image-container {
+.image-container {
     display: flex;
     flex-direction: column; /* Stack images vertically */
     align-items: center; /* Center images horizontally */
@@ -108,7 +70,8 @@ header {
 }
 
 .left-image, .right-image {
-    width: 95%; /* Adjust width to fit within the container */
+    width: 100%; /* Full width for better mobile visibility */
+    max-width: 500px; /* Set a max width for larger screens */
     margin: 10px 0; /* Vertical spacing between images */
 }
 
@@ -117,6 +80,18 @@ header {
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Larger rounded corners for images */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 20px; /* Smaller font size for the heading */
+    }
+
+    .hero-content p,
+    .hero-content .btn {
+        font-size: 14px; /* Adjust text and button size */
+    }
 }
 
 
