@@ -66,8 +66,9 @@ a {
 }
 
 .hero h1 {
-    font-size: 1.8em; /* Adjust heading size */
+    font-size: 2em; /* Adjust heading size */
     margin: 10px 0; /* Margin for heading */
+    color: #333; /* Heading text color for visibility */
 }
 
 .hero p {
@@ -114,6 +115,8 @@ a {
 .areas h2,
 .contact h2 {
     font-size: 1.5em; /* Heading size for sections */
+    color: #333; /* Heading text color for visibility */
+    margin-bottom: 10px; /* Margin below section headings */
 }
 
 .call-to-action {
@@ -123,6 +126,8 @@ a {
 
 .call-to-action h3 {
     font-size: 1.2em; /* Heading size for call-to-action */
+    color: #333; /* Heading text color for visibility */
+    margin-bottom: 10px; /* Margin below call-to-action heading */
 }
 
 .footer {
@@ -149,10 +154,12 @@ a {
 @media (max-width: 600px) {
     .hero h1 {
         font-size: 1.5em; /* Smaller font size for smaller screens */
+        color: #333; /* Ensure visibility */
     }
 
     .hero p {
         font-size: 0.9em; /* Smaller paragraph font size */
+        color: #333; /* Ensure visibility */
     }
 
     .btn {
