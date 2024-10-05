@@ -1,62 +1,57 @@
-/* Mobile Styles */
+/* Mobile Stylesheet */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Use a clean, sans-serif font */
     margin: 0;
     padding: 0;
+    line-height: 1.6; /* Improve readability */
+    background-color: #f9f9f9; /* Light background for contrast */
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background-color: #f8f9fa;
-}
-
-.logo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #ffcc00; /* Header background color */
+    padding: 10px; /* Padding for the header */
+    text-align: center; /* Center text */
 }
 
 .logo {
-    width: 80%; /* Responsive logo */
+    width: 80%; /* Logo width for mobile */
+    max-width: 150px; /* Maximum width */
 }
 
 .company-name {
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 1.2em; /* Company name font size */
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
+    margin-top: 10px; /* Margin for contact info */
 }
 
-.phone-number {
-    font-size: 1.2em;
+.phone-number,
+a {
+    display: block; /* Make links and phone number block elements */
+    margin: 5px 0; /* Margin for spacing */
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline from links */
 }
 
 .navigation {
-    display: flex;
-    justify-content: center;
-    background-color: #007bff;
+    background-color: #ffcc00; /* Navigation background color */
+    padding: 10px; /* Padding for navigation */
 }
 
 .navigation ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
 }
 
 .navigation li {
-    margin: 0 10px;
+    margin: 5px 0; /* Margin for list items */
 }
 
 .navigation a {
-    color: white;
-    text-decoration: none;
+    text-align: center; /* Center align links */
+    padding: 10px; /* Padding for clickable area */
+    display: block; /* Make links block elements */
 }
 
 .hero {
@@ -66,55 +61,107 @@ body {
 }
 
 .hero-container {
-    max-width: 800px; /* Set a maximum width for better readability */
+    max-width: 90%; /* Set a maximum width for better readability */
     margin: auto; /* Center the content */
 }
 
 .hero h1 {
-    font-size: 2em;
-    margin: 10px 0;
+    font-size: 1.8em; /* Adjust heading size */
+    margin: 10px 0; /* Margin for heading */
 }
 
 .hero p {
-    font-size: 1.2em;
-    margin: 10px 0;
+    font-size: 1em; /* Font size for paragraphs */
+    margin: 10px 0; /* Margin for paragraphs */
+}
+
+.btn {
+    background-color: #333; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 15px; /* Padding for buttons */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Make buttons inline-block */
+    margin: 10px 0; /* Margin for buttons */
 }
 
 .image-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    display: flex; /* Flexbox for image layout */
+    justify-content: center; /* Center images */
+    flex-wrap: wrap; /* Wrap images on smaller screens */
+    margin-top: 20px; /* Margin for top of image container */
 }
 
 .left-image,
 .right-image {
     width: 40%; /* Responsive image size */
-    margin: 10px;
+    margin: 5%; /* Spacing for images */
 }
-
 
 .welcome,
 .services,
 .areas,
 .contact {
-    padding: 20px;
-    text-align: center;
+    padding: 20px; /* Padding for sections */
+    background-color: #fff; /* Section background color */
+    margin: 10px 0; /* Margin for sections */
+    border-radius: 5px; /* Rounded corners for sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.welcome h2,
+.services h2,
+.areas h2,
+.contact h2 {
+    font-size: 1.5em; /* Heading size for sections */
 }
 
 .call-to-action {
-    margin: 20px 0;
+    text-align: center; /* Center call-to-action elements */
+    margin: 20px 0; /* Margin for call-to-action */
+}
+
+.call-to-action h3 {
+    font-size: 1.2em; /* Heading size for call-to-action */
+}
+
+.footer {
+    text-align: center; /* Center footer text */
+    padding: 10px; /* Padding for footer */
+    background-color: #333; /* Dark background color for footer */
+    color: #fff; /* Footer text color */
 }
 
 .floating-call-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 1.5em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed; /* Fixed positioning for floating button */
+    bottom: 20px; /* Distance from bottom */
+    right: 20px; /* Distance from right */
+    background-color: #ffcc00; /* Floating button background color */
+    color: #333; /* Floating button text color */
+    padding: 15px; /* Padding for button */
+    border-radius: 50%; /* Circular button */
+    text-align: center; /* Center text */
+    font-size: 1.2em; /* Font size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for button */
+    z-index: 1000; /* Ensure button is on top */
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.5em; /* Smaller font size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 0.9em; /* Smaller paragraph font size */
+    }
+
+    .btn {
+        width: 100%; /* Full width buttons */
+    }
+
+    .left-image,
+    .right-image {
+        width: 100%; /* Full width images */
+        margin: 10px 0; /* Margin for images */
+    }
 }
