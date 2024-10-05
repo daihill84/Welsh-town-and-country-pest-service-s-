@@ -100,7 +100,7 @@ img {
 
 .left-image {
     position: absolute; /* Position image absolutely */
-    top: 20%; /* Center vertically */
+    top: 50%; /* Center vertically */
     left: 20px; /* Align to the left */
     transform: translateY(-50%); /* Adjust to be exactly centered */
     max-width: 200px; /* Limit all images to a maximum width of 200px */
@@ -109,7 +109,7 @@ img {
 
 .right-image {
     position: absolute; /* Position image absolutely */
-    top: 20%; /* Center vertically */
+    top: 50%; /* Center vertically */
     right: 20px; /* Align to the right */
     transform: translateY(-50%); /* Adjust to be exactly centered */
     max-width: 200px; /* Limit all images to a maximum width of 200px */
