@@ -100,16 +100,15 @@ header {
 
 }
 
-.image-container {
+..image-container {
     display: flex;
-    flex-direction: column; /* Arrange images vertically */
-    justify-content: center;
+    flex-direction: column; /* Stack images vertically */
     align-items: center; /* Center images horizontally */
-    margin-top: 20px; /* Spacing above images */
+    margin-top: 15px; /* Space between content and images */
 }
 
 .left-image, .right-image {
-    width: 95%; /* Adjust to fit within the container */
+    width: 95%; /* Adjust width to fit within the container */
     margin: 10px 0; /* Vertical spacing between images */
 }
 
@@ -119,6 +118,7 @@ header {
     border-radius: 10px; /* Larger rounded corners for images */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
 }
+
 
 .welcome, .services, .advert, .areas, .contact {
     padding: 20px;
