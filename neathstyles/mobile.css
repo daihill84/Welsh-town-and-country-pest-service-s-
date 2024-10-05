@@ -7,14 +7,14 @@
 
 body {
     font-family: 'Arial', sans-serif; /* Modern font choice */
-    background-color: #f5f5f5; /* Light background */
-    color: #333; /* Dark text color for contrast */
+    background-color: #f0f0f0; /* Light background */
+    color: #444; /* Dark text color for contrast */
     line-height: 1.6; /* Increased line height for readability */
 }
 
 /* Header Styles */
 .header {
-    background-color: #ffcc00; /* Yellow header */
+    background-color: #4CAF50; /* Green header */
     padding: 15px; /* Padding for header */
     text-align: center; /* Center text */
 }
@@ -32,7 +32,7 @@ body {
 
 /* Navigation Styles */
 .navigation {
-    background-color: #ffcc00; /* Yellow background for nav */
+    background-color: #4CAF50; /* Green background for nav */
     padding: 10px 0; /* Padding for navigation */
 }
 
@@ -47,7 +47,7 @@ body {
 
 .navigation a {
     text-decoration: none; /* Remove underline */
-    color: #333; /* Dark text color */
+    color: #fff; /* White text color */
     padding: 10px 15px; /* Padding for clickable area */
     display: block; /* Full-width clickable area */
     text-align: center; /* Center align links */
@@ -55,7 +55,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background-color: #ffcc00; /* Yellow background */
+    background-color: #4CAF50; /* Green background */
     padding: 20px; /* Padding for hero section */
     text-align: center; /* Center text */
 }
@@ -63,12 +63,13 @@ body {
 .hero h1 {
     font-size: 2em; /* Large heading */
     margin: 10px 0; /* Margin around heading */
-    color: #333; /* Dark color for contrast */
+    color: #fff; /* White color for contrast */
 }
 
 .hero p {
     font-size: 1em; /* Font size for paragraph */
     margin: 10px 0; /* Margin around paragraph */
+    color: #f0f0f0; /* Lighter text color */
 }
 
 /* Button Styles */
@@ -137,8 +138,8 @@ section h2 {
     position: fixed; /* Fixed positioning */
     bottom: 20px; /* Distance from bottom */
     right: 20px; /* Distance from right */
-    background-color: #ffcc00; /* Yellow button background */
-    color: #333; /* Dark text color */
+    background-color: #4CAF50; /* Green button background */
+    color: #fff; /* White text color */
     padding: 15px; /* Padding for button */
     border-radius: 50%; /* Circular shape */
     text-align: center; /* Center text */
