@@ -86,7 +86,7 @@ body {
 
 .left-image,
 .right-image {
-    width: 45%; /* Responsive image size */
+    width: 20%; /* Responsive image size */
     margin: 10px;
 }
 
