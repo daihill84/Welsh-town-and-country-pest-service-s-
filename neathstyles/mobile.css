@@ -39,6 +39,7 @@ body {
 .navigation ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .navigation li {
@@ -58,18 +59,24 @@ body {
     background-color: #4CAF50;
     padding: 20px;
     text-align: center;
+    color: white;
 }
 
 .hero h1 {
     font-size: 2em;
     margin: 10px 0;
-    color: white;
 }
 
 .hero p {
     font-size: 1em;
     margin: 10px 0;
     color: #f0f0f0;
+}
+
+.hero .right-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
 }
 
 /* Button Styles */
@@ -83,6 +90,10 @@ body {
     margin: 10px 0;
 }
 
+.btn.call-btn {
+    background-color: #4CAF50;
+}
+
 /* Image Styles */
 .image-container {
     display: flex;
@@ -91,10 +102,11 @@ body {
     margin-top: 20px;
 }
 
-.image {
+.left-image, .right-image {
     width: 20%; /* Adjust for smaller screens */
     margin: 1%;
-    max-width: 50px;
+    max-width: 150px; /* Prevent large images */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Section Styles */
@@ -158,8 +170,13 @@ section h2 {
         font-size: 1em;
     }
 
-    .image {
+    .left-image, .right-image {
         width: 100%; /* Full-width images on mobile */
         margin: 5px 0;
+    }
+
+    .image-container {
+        flex-direction: column; /* Stack images on top of each other on small screens */
+        align-items: center;
     }
 }
