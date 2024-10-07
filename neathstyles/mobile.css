@@ -92,9 +92,9 @@ body {
 }
 
 .image {
-    width: 48%; /* Responsive image width */
+    width: 20%; /* Responsive image width */
     margin: 1%; /* Margin around images */
-    max-width: 100px; /* Maximum image width */
+    max-width: 50px; /* Maximum image width */
 }
 
 /* Section Styles */
