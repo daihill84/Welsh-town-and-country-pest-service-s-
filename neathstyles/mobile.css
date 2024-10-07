@@ -1,166 +1,165 @@
-/* Reset and Base Styles */ 
+/* Reset and Base Styles */
 * {
-    box-sizing: border-box; /* Box model */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Standardize box model */
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Arial', sans-serif; /* Modern font choice */
-    background-color: #f0f0f0; /* Light background */
-    color: #444; /* Dark text color for contrast */
-    line-height: 1.6; /* Increased line height for readability */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #444;
+    line-height: 1.6; /* Improved readability */
 }
 
 /* Header Styles */
 .header {
     background-color: #4CAF50; /* Green header */
-    padding: 15px; /* Padding for header */
-    text-align: center; /* Center text */
+    padding: 15px;
+    text-align: center;
 }
 
 .logo {
-    max-width: 100px; /* Responsive logo width */
-    width: 80%; /* Logo scaling */
+    max-width: 100px; /* Ensure responsiveness */
+    width: 80%;
 }
 
 .company-name {
-    font-size: 1.5em; /* Increased font size */
-    font-weight: bold; /* Bold for emphasis */
-    margin-top: 10px; /* Space above the company name */
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 /* Navigation Styles */
 .navigation {
-    background-color: #4CAF50; /* Green background for nav */
-    padding: 10px 0; /* Padding for navigation */
+    background-color: #4CAF50;
+    padding: 10px 0;
 }
 
 .navigation ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* No padding */
+    list-style: none;
+    padding: 0;
 }
 
 .navigation li {
-    margin: 10px 0; /* Margin for each item */
+    margin: 10px 0;
 }
 
 .navigation a {
-    text-decoration: none; /* Remove underline */
-    color: #fff; /* White text color */
-    padding: 10px 15px; /* Padding for clickable area */
-    display: block; /* Full-width clickable area */
-    text-align: center; /* Center align links */
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
 }
 
 /* Hero Section */
 .hero {
-    background-color: #4CAF50; /* Green background */
-    padding: 20px; /* Padding for hero section */
-    text-align: center; /* Center text */
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
 }
 
 .hero h1 {
-    font-size: 2em; /* Large heading */
-    margin: 10px 0; /* Margin around heading */
-    color: #fff; /* White color for contrast */
+    font-size: 2em;
+    margin: 10px 0;
+    color: white;
 }
 
 .hero p {
-    font-size: 1em; /* Font size for paragraph */
-    margin: 10px 0; /* Margin around paragraph */
-    color: #f0f0f0; /* Lighter text color */
+    font-size: 1em;
+    margin: 10px 0;
+    color: #f0f0f0;
 }
 
 /* Button Styles */
 .btn {
-    background-color: #333; /* Dark background for buttons */
-    color: #fff; /* White text for buttons */
-    padding: 10px 15px; /* Padding for buttons */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    display: inline-block; /* Inline block for buttons */
-    margin: 10px 0; /* Margin for buttons */
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 0;
 }
 
 /* Image Styles */
 .image-container {
-    display: flex; /* Flexbox for images */
-    justify-content: space-between; /* Space between images */
-    flex-wrap: wrap; /* Wrap on small screens */
-    margin-top: 20px; /* Margin for image container */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    margin-top: 20px;
 }
 
 .image {
-    width: 100%; /* Full-width images on mobile */
-    max-width: 50px; /* Maximum image width */
-    margin: 1%; /* Margin around images */
+    width: 20%; /* Adjust for smaller screens */
+    margin: 1%;
+    max-width: 50px;
 }
 
 /* Section Styles */
 section {
-    background-color: #fff; /* White background for sections */
-    padding: 15px; /* Padding for sections */
-    margin: 10px 5%; /* Margin for sections */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: white;
+    padding: 15px;
+    margin: 10px 5%;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Headings */
 section h2 {
-    font-size: 1.5em; /* Section heading size */
-    color: #333; /* Section heading color */
-    margin-bottom: 10px; /* Margin below heading */
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 /* Call to Action Section */
 .call-to-action {
-    text-align: center; /* Center content */
-    margin: 20px 0; /* Margin for call-to-action */
+    text-align: center;
+    margin: 20px 0;
 }
 
 .call-to-action h3 {
-    font-size: 1.3em; /* Heading size */
-    color: #333; /* Heading color */
-    margin-bottom: 10px; /* Margin below heading */
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 /* Footer Styles */
 .footer {
-    text-align: center; /* Center footer text */
-    padding: 15px; /* Padding for footer */
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
 }
 
 /* Floating Call Button */
 .floating-call-button {
-    position: fixed; /* Fixed positioning */
-    bottom: 20px; /* Distance from bottom */
-    right: 20px; /* Distance from right */
-    background-color: #4CAF50; /* Green button background */
-    color: #fff; /* White text color */
-    padding: 15px; /* Padding for button */
-    border-radius: 50%; /* Circular shape */
-    text-align: center; /* Center text */
-    font-size: 1.5em; /* Font size for button */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    z-index: 1000; /* Ensure on top */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 50%; /* Circular button */
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it's above other elements */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 600px) {
     .hero h1 {
-        font-size: 1.8em; /* Smaller heading size for mobile */
+        font-size: 1.8em;
     }
 
     .btn {
-        width: 100%; /* Full-width buttons */
-        font-size: 1em; /* Font size for buttons */
+        width: 100%; /* Full-width buttons on mobile */
+        font-size: 1em;
     }
 
     .image {
         width: 100%; /* Full-width images on mobile */
-        margin: 5px 0; /* Margin for images */
+        margin: 5px 0;
     }
 }
