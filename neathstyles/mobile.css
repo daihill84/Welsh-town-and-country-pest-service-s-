@@ -9,25 +9,29 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #444;
-    line-height: 1.6; /* Improved readability */
+    line-height: 1.6;
+    margin: 0; /* Ensure there's no default body margin */
 }
 
 /* Header Styles */
 .header {
-    background-color: #4CAF50; /* Green header */
-    padding: 15px;
+    background-color: #4CAF50;
+    padding: 20px;
     text-align: center;
+    color: white;
 }
 
 .logo {
-    max-width: 100px; /* Ensure responsiveness */
-    width: 80%;
+    max-width: 100px;
+    width: 80%; /* Responsive size for the logo */
+    margin: 0 auto;
 }
 
 .company-name {
     font-size: 1.5em;
     font-weight: bold;
     margin-top: 10px;
+    color: white;
 }
 
 /* Navigation Styles */
@@ -40,10 +44,12 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center; /* Center navigation items */
 }
 
 .navigation li {
-    margin: 10px 0;
+    margin: 0 15px;
 }
 
 .navigation a {
@@ -52,86 +58,101 @@ body {
     padding: 10px 15px;
     display: block;
     text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #45a049;
 }
 
 /* Hero Section */
 .hero {
     background-color: #4CAF50;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
     color: white;
 }
 
 .hero h1 {
     font-size: 2em;
-    margin: 10px 0;
+    margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 1em;
+    font-size: 1.1em;
     margin: 10px 0;
-    color: #f0f0f0;
 }
 
 .hero .right-image {
     max-width: 100%;
     height: auto;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 /* Button Styles */
 .btn {
     background-color: #333;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
-    margin: 10px 0;
+    margin: 15px 0;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
 }
 
 .btn.call-btn {
     background-color: #4CAF50;
 }
 
+.btn.call-btn:hover {
+    background-color: #45a049;
+}
+
 /* Image Styles */
 .image-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
 .left-image, .right-image {
-    width: 20%; /* Adjust for smaller screens */
+    width: 20%;
+    max-width: 150px;
     margin: 1%;
-    max-width: 150px; /* Prevent large images */
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
+    border-radius: 5px; /* Add a slight roundness */
 }
 
 /* Section Styles */
 section {
     background-color: white;
-    padding: 15px;
-    margin: 10px 5%;
+    padding: 20px;
+    margin: 20px 5%;
     border-radius: 8px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* Call to Action Section */
 .call-to-action {
     text-align: center;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .call-to-action h3 {
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: #333;
     margin-bottom: 10px;
 }
@@ -152,15 +173,29 @@ section h2 {
     background-color: #4CAF50;
     color: white;
     padding: 15px;
-    border-radius: 50%; /* Circular button */
+    border-radius: 50%;
     text-align: center;
     font-size: 1.5em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Ensure it's above other elements */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.floating-call-button:hover {
+    background-color: #45a049;
 }
 
 /* Responsive Adjustments */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation li {
+        margin: 10px 0;
+    }
+
     .hero h1 {
         font-size: 1.8em;
     }
@@ -171,12 +206,22 @@ section h2 {
     }
 
     .left-image, .right-image {
-        width: 100%; /* Full-width images on mobile */
-        margin: 5px 0;
+        width: 100%;
+        margin: 10px 0;
     }
 
     .image-container {
-        flex-direction: column; /* Stack images on top of each other on small screens */
+        flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .company-name {
+        font-size: 1.2em;
     }
 }
