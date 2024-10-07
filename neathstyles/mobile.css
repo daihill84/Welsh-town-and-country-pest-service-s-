@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* Reset and Base Styles */ 
 * {
     box-sizing: border-box; /* Box model */
     margin: 0; /* Remove default margin */
@@ -92,9 +92,9 @@ body {
 }
 
 .image {
-    width: 20%; /* Responsive image width */
-    margin: 1%; /* Margin around images */
+    width: 100%; /* Full-width images on mobile */
     max-width: 50px; /* Maximum image width */
+    margin: 1%; /* Margin around images */
 }
 
 /* Section Styles */
